@@ -1,64 +1,322 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>fitness-2.0</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+  <div class="body__wrapper">
+    <header class="header">
+      <div class="header__logo-wrapper">
+        <a class="header__logo-link">
+          <svg class="header__logo"></svg>
+        </a>
+      </div>
+      <div class="header__tel-wrapper">
+        <span class="header__tel"></span>
+      </div>
+      <div class="header__intro-wrapper">
+        <h2 class="header__small-title">Омск</h2>
+        <ul class="header__desctiption-list">
+          <li class="header__desctiption-item">Тренажёрный зал</li>
+          <li class="header__desctiption-item">Групповые занятия</li>
+          <li class="header__desctiption-item">Кардио-зона</li>
+        </ul>
+        <h3 class="header__title">ФИТНЕС ЦЕНТР</h3>
+        <a>Купить абонемент</a>
+      </div>
+      <div class="header__image-wrapper">
+        <img class="header__image">
+      </div>
+    </header>
+    <main class="main">
+      <section class="gym">
+        <h2 class="gym__title">Тренажерный зал</h2>
+        <span class="gym__subtitle">Просторный зал площадью 900 кв/м</span>
+        <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
+          зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p class="gym__description">
+          В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+          несколько оборудованных залов для различных видов групповых занятий.</p>
+      </section>
+      <section class="passes">
+        <h2 class="passes__title">Абонементы</h2>
+        <ul class="passes__list">
+          <li class="passes__list-item">
+            <a class="passes__item-link">
+              <h3 class="passes__option-title">С тренером</h3>
+              <span class="passes__option-subtitle">12 занятий</span>
+              <span class="passes__price">5000</span>
+              <button class="passes__button">купить абонемент</button>
+            </a>
+          </li>
+          <li class="passes__list-item">
+            <a class="passes__item-link">
+              <h3 class="passes__option-title">Дневной</h3>
+              <span class="passes__option-subtitle">с 8:00 до 17:00</span>
+              <span class="passes__price">1700</span>
+              <button class="passes__button">купить абонемент</button>
+            </a>
+          </li>
+          <li class="passes__list-item">
+            <a class="passes__item-link">
+              <h3 class="passes__option-title">Полный день</h3>
+              <span class="passes__option-subtitle">с 8:00 до 22:00</span>
+              <span class="passes__price">2700</span>
+              <button class="passes__button">купить абонемент</button>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">SUPER GAMES</h2>
+          <span class="promo__description">Ежегодные соревнования по CrossFit</span>
+          <button class="promo__button">заполнить заявку</button>
+          <img src="/img/trainer-3.jpg">
+        </div>
+      </section>
+      <section class="trainers">
+        <h2 class="trainers__title">Тренеры</h2>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__list-item">
+            <div class="advantages__number-wrapper">
+              <span>900</span>
+              <span>кв/м</span>
+            </div>
+            <div class="advantages__text-wrapper">
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей и толпучки</p>
+            </div>
+          </li>
+          <li class="advantages__list-item">
+            <div class="advantages__number-wrapper">
+              <span>70</span>
+              <span>машин</span>
+            </div>
+            <div class="advantages__text-wrapper">
+              <h3 class="advantages__text-title">Собственная парковка</h3>
+              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+            </div>
+          </li>
+          <li class="advantages__list-item advantages__list-item--accent">
+            <div class="advantages__number-wrapper">
+              <span>100</span>
+              <span>Тренажеров</span>
+            </div>
+            <div class="advantages__text-wrapper">
+              <p>Современные тренажеры на все группы мышц</p>
+            </div>
+          </li>
+          <li class="advantages__list-item">
+            <div class="advantages__number-wrapper">
+              <span>350</span>
+              <span>мест</span>
+            </div>
+            <div class="advantages__text-wrapper">
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки,
+                душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </li>
+          <li class="advantages__list-item">
+            <div class="advantages__number-wrapper">
+              <span>5+</span>
+              <span>лет</span>
+            </div>
+            <div class="advantages__text-wrapper">
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="deals">
+        <h2 class="deals__title">Акции</h2>
+        <div class="deals__bigger-banner">
+          <span>Год</span>
+          <h3>4999</h3>
+          <p>Безлимитный абонемент в тренажерный зал</p>
+          <a>подробнее</a>
+          <img>
+        </div>
+        <ul class="deals__list">
+          <li class="deals__list-item">
+            <h3 class="deals__item-title">Месяц бесплатно</h3>
+            <p class="deals__item-info">Приведи друга, получи абонемент в подарок</p>
+            <a class="deals__item-link">подробнее</a>
+          </li>
+          <li class="deals__list-item">
+            <h3 class="deals__item-title">Скидка 20%</h3>
+            <p class="deals__item-info">Корпоративный фитнес с командой</p>
+            <a class="deals__item-button">подробнее</a>
+          </li>
+        </ul>
+      </section>
+      <section class="faq">
+        <div class="tabs">
+          <h2>Вопросы и ответы</h2>
+          <div class="tabs__list">
+            <button class="tabs__button" id="tab-1" type="button" role="tab" aria-selected="true"
+              aria-controls="tabpanel-1">
+              <span class="tabs__button-name">Центр</span>
+            </button>
+            <button class="tabs__button" id="tab-2" type="button" role="tab" aria-selected="false"
+              aria-controls="tabpanel-2">
+              <span class="tabs__button-name">Абонемент</span>
+            </button>
+            <button class="tabs__button" id="tab-3" type="button" role="tab" aria-selected="false"
+              aria-controls="tabpanel-3">
+              <span class="tabs__button-name">Услуги</span>
+            </button>
+            <button class="tabs__button" id="tab-4" type="button" role="tab" aria-selected="false"
+              aria-controls="tabpanel-4">
+              <span class="tabs__button-name">Правила</span>
+            </button>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
         </div>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+      </section>
+      <section class="additional-info">
+        <div class="additional-info__wrapper">
+          <form class="form">
+            <h3 class="form__title">Бесплатное занятие</h3>
+            <fieldset class="form__group">
+              <label class="form__">
+                <span>Имя</span>
+                <input type="text" name="name">
+              </label>
+              <label>
+                <span>Телефон</span>
+                <input type="tel" name="tel">
+              </label>
+              <button type="submit">отправить</button>
+            </fieldset>
+          </form>
+        </div>
+        <div>
+          <h3>Контакты</h3>
+          <ul>
+            <li>
+              <h4>Адрес:</h4>
+              <p>г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li>
+              <h4>График работы:</h4>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li>
+              <h4>Телефон:</h4>
+              <p>8-800-555-55-55</p>
+            </li>
+            <li>
+              <h4>Email:</h4>
+              <p>omsk@supergym.ru</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <nav class="navigation">
+          <div class="navigation__logo-wrapper">
+            <a class="navigation__logo-link">
+              <picture class="navigation__pictire-list">
+                <img class="navigation__logo-image" src="">
+              </picture>
+            </a>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link">Услуги</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link">Абонементы</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link">Акции</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link">Тренеры</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link">Расписание</a>
+            </li>
+          </ul>
+          <ul class="social-list">
+            <li>
+              <a>
+                <svg width="25" height="25" viewBox="0 0 25 25">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg width="25" height="25" viewBox="0 0 25 25">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <svg width="25" height="25" viewBox="0 0 25 25">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+                <span class="visually-hidden">Реддит</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

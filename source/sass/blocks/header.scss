@@ -1,0 +1,47 @@
+.header {
+    color: #ffffff;
+    padding: 30px 103px 51px;
+    background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+}
+
+.header__upper-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo-text {
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.72px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.header__tel {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.78px;
+}
+
+.header__small-title {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 1.44px;
+}
+
+.header__desctiption-list {
+    list-style: none;
+}
+
+.header__title {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 92px;
+    font-weight: 600;
+    line-height: normal;
+    // letter-spacing: 4.6px;
+    text-align: right;
+    margin: 0;
+}

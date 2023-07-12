@@ -32,14 +32,15 @@
         <a>Купить абонемент</a>
       </div>
       <div class="header__image-wrapper">
-        <img class="header__image">
+        <img class="header__image" src="#" alt="Мужчина в футболке супермена">
       </div>
     </header>
     <main class="main">
       <section class="gym">
         <h2 class="gym__title">Тренажерный зал</h2>
         <span class="gym__subtitle">Просторный зал площадью 900 кв/м</span>
-        <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
+        <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
+          тела и здоровья. Тренажерный
           зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
         <p class="gym__description">
           В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
@@ -49,28 +50,22 @@
         <h2 class="passes__title">Абонементы</h2>
         <ul class="passes__list">
           <li class="passes__list-item">
-            <a class="passes__item-link">
               <h3 class="passes__option-title">С тренером</h3>
               <span class="passes__option-subtitle">12 занятий</span>
               <span class="passes__price">5000</span>
-              <button class="passes__button">купить абонемент</button>
-            </a>
+              <a class="passes__button">купить абонемент</a>
           </li>
           <li class="passes__list-item">
-            <a class="passes__item-link">
               <h3 class="passes__option-title">Дневной</h3>
               <span class="passes__option-subtitle">с 8:00 до 17:00</span>
               <span class="passes__price">1700</span>
-              <button class="passes__button">купить абонемент</button>
-            </a>
+              <a class="passes__button">купить абонемент</a>
           </li>
           <li class="passes__list-item">
-            <a class="passes__item-link">
               <h3 class="passes__option-title">Полный день</h3>
               <span class="passes__option-subtitle">с 8:00 до 22:00</span>
               <span class="passes__price">2700</span>
-              <button class="passes__button">купить абонемент</button>
-            </a>
+              <a class="passes__button">купить абонемент</a>
           </li>
         </ul>
       </section>
@@ -79,7 +74,7 @@
           <h2 class="promo__title">SUPER GAMES</h2>
           <span class="promo__description">Ежегодные соревнования по CrossFit</span>
           <button class="promo__button">заполнить заявку</button>
-          <img src="/img/trainer-3.jpg">
+          <img src="/img/trainer-3.jpg" alt="Мужчина топлес">
         </div>
       </section>
       <section class="trainers">
@@ -147,7 +142,7 @@
           <h3>4999</h3>
           <p>Безлимитный абонемент в тренажерный зал</p>
           <a>подробнее</a>
-          <img>
+          <img src="#" alt="Спортивная девушка">
         </div>
         <ul class="deals__list">
           <li class="deals__list-item">
@@ -163,25 +158,37 @@
         </ul>
       </section>
       <section class="faq">
-        <div class="tabs">
+        <div class="faq__tabs">
           <h2>Вопросы и ответы</h2>
-          <div class="tabs__list">
-            <button class="tabs__button" id="tab-1" type="button" role="tab" aria-selected="true"
+          <div class="faq__tabs-list" role="tablist" aria-labelledby="tablist-1" class="automatic">
+            <button class="faq__tabs-button" id="tab-1" type="button" role="tab" aria-selected="true"
               aria-controls="tabpanel-1">
-              <span class="tabs__button-name">Центр</span>
+              <span class="faq__tabs-button-name">Центр</span>
             </button>
-            <button class="tabs__button" id="tab-2" type="button" role="tab" aria-selected="false"
+            <button class="faq__tabs-button" id="tab-2" type="button" role="tab" aria-selected="false"
               aria-controls="tabpanel-2">
-              <span class="tabs__button-name">Абонемент</span>
+              <span class="faq__tabs-button-name">Абонемент</span>
             </button>
-            <button class="tabs__button" id="tab-3" type="button" role="tab" aria-selected="false"
+            <button class="faq__tabs-button" id="tab-3" type="button" role="tab" aria-selected="false"
               aria-controls="tabpanel-3">
-              <span class="tabs__button-name">Услуги</span>
+              <span class="faq__tabs-button-name">Услуги</span>
             </button>
-            <button class="tabs__button" id="tab-4" type="button" role="tab" aria-selected="false"
+            <button class="faq__tabs-button" id="tab-4" type="button" role="tab" aria-selected="false"
               aria-controls="tabpanel-4">
-              <span class="tabs__button-name">Правила</span>
+              <span class="faq__tabs-button-name">Правила</span>
             </button>
+          </div>
+          <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+            // accordion
+          </div>
+          <div id="tabpanel-2" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-2">
+            // accordion
+          </div>
+          <div id="tabpanel-3" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+            // accordion
+          </div>
+          <div id="tabpanel-4" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-4">
+            // accordion
           </div>
         </div>
       </section>
@@ -189,40 +196,40 @@
         <h2 class="reviews__title">Отзывы</h2>
       </section>
       <section class="additional-info">
-        <div class="additional-info__wrapper">
-          <form class="form">
-            <h3 class="form__title">Бесплатное занятие</h3>
-            <fieldset class="form__group">
-              <label class="form__">
-                <span>Имя</span>
-                <input type="text" name="name">
+        <div class="appointment-field">
+          <form class="appointment-field__form">
+            <h3 class="appointment-field__form-title">Бесплатное занятие</h3>
+            <fieldset class="appointment-field__form-group">
+              <label class="appointment-field__form-label">
+                <span class="appointment-field__form-input-title">Имя</span>
+                <input class="appointment-field__form-input" type="text" name="name">
               </label>
-              <label>
-                <span>Телефон</span>
-                <input type="tel" name="tel">
+              <label class="appointment-field__form-label">
+                <span class="appointment-field__form-input-title">Телефон</span>
+                <input class="appointment-field__form-input" type="tel" name="tel">
               </label>
-              <button type="submit">отправить</button>
+              <button class="appointment-field__form-button" type="submit">отправить</button>
             </fieldset>
           </form>
         </div>
-        <div>
-          <h3>Контакты</h3>
-          <ul>
-            <li>
-              <h4>Адрес:</h4>
-              <p>г. Омск, ул. 60 лет Октября, 7</p>
+        <div class="contacts">
+          <h3 class="contacts__title">Контакты</h3>
+          <ul class="contacts__list">
+            <li class="contacts__list-item">
+              <h4 class="contacts__list-item-title">Адрес:</h4>
+              <p class="contacts__list-item-description">г. Омск, ул. 60 лет Октября, 7</p>
             </li>
             <li>
-              <h4>График работы:</h4>
-              <p>Пн-Вс: с 8:00 до 22:00</p>
+              <h4 class="contacts__list-item-title">График работы:</h4>
+              <p class="contacts__list-item-description">Пн-Вс: с 8:00 до 22:00</p>
             </li>
             <li>
-              <h4>Телефон:</h4>
-              <p>8-800-555-55-55</p>
+              <h4 class="contacts__list-item-title">Телефон:</h4>
+              <p class="contacts__list-item-description">8-800-555-55-55</p>
             </li>
             <li>
-              <h4>Email:</h4>
-              <p>omsk@supergym.ru</p>
+              <h4 class="contacts__list-item-title">Email:</h4>
+              <p class="contacts__list-item-description">omsk@supergym.ru</p>
             </li>
           </ul>
         </div>
@@ -233,9 +240,7 @@
         <nav class="navigation">
           <div class="navigation__logo-wrapper">
             <a class="navigation__logo-link">
-              <picture class="navigation__pictire-list">
-                <img class="navigation__logo-image" src="">
-              </picture>
+              <img class="navigation__logo-image" src="#" alt="логотип">
             </a>
           </div>
           <ul class="nav-list">
@@ -256,28 +261,28 @@
             </li>
           </ul>
           <ul class="social-list">
-            <li>
-              <a>
-                <svg width="25" height="25" viewBox="0 0 25 25">
+            <li class="social-list__item">
+              <a class="social-list__link">
+                <svg class="social-list__icon" width="25" height="25" viewBox="0 0 25 25">
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
-                <span class="visually-hidden">ВКонтакте</span>
+                <span class="social-list__item-name visually-hidden">ВКонтакте</span>
               </a>
             </li>
-            <li>
-              <a>
-                <svg width="25" height="25" viewBox="0 0 25 25">
+            <li class="social-list__item">
+              <a class="social-list__link">
+                <svg class="social-list__icon" width="25" height="25" viewBox="0 0 25 25">
                   <use xlink:href="img/sprite.svg#ok"></use>
                 </svg>
-                <span class="visually-hidden">Одноклассники</span>
+                <span class="social-list__item-name visually-hidden">Одноклассники</span>
               </a>
             </li>
-            <li>
-              <a>
-                <svg width="25" height="25" viewBox="0 0 25 25">
+            <li class="social-list__item">
+              <a class="social-list__link">
+                <svg class="social-list__icon" width="25" height="25" viewBox="0 0 25 25">
                   <use xlink:href="img/sprite.svg#reddit"></use>
                 </svg>
-                <span class="visually-hidden">Реддит</span>
+                <span class="social-list__item-name visually-hidden">Реддит</span>
               </a>
             </li>
           </ul>

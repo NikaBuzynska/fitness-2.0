@@ -1,0 +1,9 @@
+.footer {
+    padding: 0 103px;
+    color: $color-default-white;
+    background-color: $black-russian;
+
+    @media (max-width: $tablet-width) {
+        padding: 0 45px;
+    }
+}

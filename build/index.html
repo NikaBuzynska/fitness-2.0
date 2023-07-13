@@ -9,7 +9,9 @@
   <title>fitness-2.0</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600;800&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,18 +24,20 @@
         </a>
         <span class="header__tel">8-800-555-55-55</span>
       </div>
-      <div class="header__intro-wrapper">
-        <h2 class="header__small-title">Омск</h2>
-        <ul class="header__desctiption-list">
-          <li class="header__desctiption-item">Тренажёрный зал</li>
-          <li class="header__desctiption-item">Групповые занятия</li>
-          <li class="header__desctiption-item">Кардио-зона</li>
-        </ul>
-        <h3 class="header__title">ФИТНЕС ЦЕНТР</h3>
-        <a>Купить абонемент</a>
-      </div>
-      <div class="header__image-wrapper">
-        <img class="header__image" src="#" alt="Мужчина в футболке супермена">
+      <div class="header__container">
+        <div class="header__intro-wrapper">
+          <h2 class="header__small-title">Омск</h2>
+          <ul class="header__desctiption-list">
+            <li class="header__desctiption-item">Тренажёрный зал</li>
+            <li class="header__desctiption-item">Групповые занятия</li>
+            <li class="header__desctiption-item">Кардио-зона</li>
+          </ul>
+          <h3 class="header__title">фитнес центр</h3>
+          <a class="header__button">Купить абонемент</a>
+        </div>
+        <div class="header__image-wrapper">
+          <img class="header__image" src="/img/header-picture.jpg" alt="Мужчина в футболке супермена">
+        </div>
       </div>
     </header>
     <main class="main">
@@ -51,22 +55,22 @@
         <h2 class="passes__title">Абонементы</h2>
         <ul class="passes__list">
           <li class="passes__list-item">
-              <h3 class="passes__option-title">С тренером</h3>
-              <span class="passes__option-subtitle">12 занятий</span>
-              <span class="passes__price">5000</span>
-              <a class="passes__button">купить абонемент</a>
+            <h3 class="passes__option-title">С тренером</h3>
+            <span class="passes__option-subtitle">12 занятий</span>
+            <span class="passes__price">5000</span>
+            <a class="passes__button">купить абонемент</a>
           </li>
           <li class="passes__list-item">
-              <h3 class="passes__option-title">Дневной</h3>
-              <span class="passes__option-subtitle">с 8:00 до 17:00</span>
-              <span class="passes__price">1700</span>
-              <a class="passes__button">купить абонемент</a>
+            <h3 class="passes__option-title">Дневной</h3>
+            <span class="passes__option-subtitle">с 8:00 до 17:00</span>
+            <span class="passes__price">1700</span>
+            <a class="passes__button">купить абонемент</a>
           </li>
           <li class="passes__list-item">
-              <h3 class="passes__option-title">Полный день</h3>
-              <span class="passes__option-subtitle">с 8:00 до 22:00</span>
-              <span class="passes__price">2700</span>
-              <a class="passes__button">купить абонемент</a>
+            <h3 class="passes__option-title">Полный день</h3>
+            <span class="passes__option-subtitle">с 8:00 до 22:00</span>
+            <span class="passes__price">2700</span>
+            <a class="passes__button">купить абонемент</a>
           </li>
         </ul>
       </section>
@@ -239,12 +243,17 @@
     <footer class="footer">
       <div class="footer__container">
         <nav class="navigation">
-          <div class="navigation__logo-wrapper">
+          <!-- <div class="navigation__logo-wrapper">
             <a class="navigation__logo-link">
-              <img class="navigation__logo-image" src="#" alt="логотип">
+                <span class="navigation__logo-text">supergym</span>
             </a>
-          </div>
+          </div> -->
           <ul class="nav-list">
+            <li class="nav-list__item nav-list__item--logo">
+              <a class="navigation__logo-link">
+                <span class="navigation__logo-text">supergym</span>
+            </a>
+            </li>
             <li class="nav-list__item">
               <a class="nav-list__link">Услуги</a>
             </li>

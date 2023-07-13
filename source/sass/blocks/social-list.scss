@@ -1,0 +1,17 @@
+.social-list {
+    display: flex;
+    margin: 41px 0;
+
+    @media (max-width: $tablet-width) {
+        padding: 0;
+        margin: 46px 0;
+    }
+}
+
+.social-list__item {
+    margin-left: 11px;
+}
+
+// .social-list__link {
+//     color: $color-default-white;
+// }

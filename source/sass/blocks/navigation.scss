@@ -15,17 +15,3 @@
         margin-right: 24px;
     }
 }
-
-.navigation__logo-text {
-    font-family: 'Alumni Sans', sans-serif;
-    color: $color-default-white;
-    font-size: 26px;
-    letter-spacing: 0.52px;
-    font-style: normal;
-    font-weight: 600;
-    text-transform: uppercase;
-
-    @media (max-width: $tablet-width) {
-        font-size: 24px;
-    }
-}

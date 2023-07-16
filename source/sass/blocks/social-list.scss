@@ -1,15 +1,24 @@
 .social-list {
     display: flex;
-    margin: 41px 0;
+    margin: 42px 0 0;
 
     @media (max-width: $tablet-width) {
         padding: 0;
         margin: 46px 0;
     }
+
+    @media (max-width: $mobile-width) {
+        margin: 27px 0 0;
+    }
 }
 
 .social-list__item {
     margin-left: 11px;
+
+    @media (max-width: $mobile-width) {
+        margin-left: 0;
+        margin-right: 11px;
+    }
 }
 
 // .social-list__link {

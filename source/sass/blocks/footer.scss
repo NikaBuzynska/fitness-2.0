@@ -6,4 +6,14 @@
     @media (max-width: $tablet-width) {
         padding: 0 45px;
     }
+
+    @media (max-width: $mobile-width) {
+        padding: 0;
+    }
+}
+
+.footer__container {
+    @media (max-width: $mobile-width) {
+        padding: 38px 15px 52px;
+    }
 }

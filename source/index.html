@@ -18,196 +18,273 @@
 <body class="body">
   <div class="body__wrapper">
     <header class="header">
-      <div class="header__upper-wrapper">
-        <a class="header__logo-link">
-          <span class="header__logo-text">supergym</span>
-        </a>
-        <span class="header__tel">8-800-555-55-55</span>
-      </div>
-      <div class="header__container">
-        <div class="header__intro-wrapper">
-          <h2 class="header__small-title">Омск</h2>
-          <ul class="header__desctiption-list">
-            <li class="header__desctiption-item">Тренажёрный зал</li>
-            <li class="header__desctiption-item">Групповые занятия</li>
-            <li class="header__desctiption-item">Кардио-зона</li>
-          </ul>
-          <h3 class="header__title">Фитнес центр</h3>
-          <a class="header__button">Купить абонемент</a>
+      <div class="header__content-wrapper">
+        <div class="header__upper-wrapper">
+          <a class="header__logo-link">
+            <span class="header__logo-text">supergym</span>
+          </a>
+          <span class="header__tel">8-800-555-55-55</span>
         </div>
-        <div class="header__image-wrapper">
-          <img class="header__image" src="/img/header-picture.jpg" alt="Мужчина в футболке супермена">
+        <div class="header__container">
+          <div class="header__intro-wrapper">
+            <h2 class="header__small-title">Омск</h2>
+            <ul class="header__desctiption-list">
+              <li class="header__desctiption-item">Тренажёрный зал</li>
+              <li class="header__desctiption-item">Групповые занятия</li>
+              <li class="header__desctiption-item">Кардио-зона</li>
+            </ul>
+            <h3 class="header__title">Фитнес центр</h3>
+            <a class="header__button">Купить абонемент</a>
+          </div>
+          <div class="header__image-wrapper">
+            <img class="header__image" src="/img/header-picture.jpg" alt="Мужчина в футболке супермена">
+          </div>
         </div>
       </div>
     </header>
     <main class="main">
       <section class="gym">
-        <div class="gym__text-wrapper">
-          <h2 class="gym__title">Тренажерный зал</h2>
-          <span class="gym__subtitle">Просторный зал площадью 900 кв/м</span>
-          <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
-            тела и здоровья. Тренажерный
-            зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p class="gym__description gym__description--second">
-            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
-            несколько оборудованных залов для различных видов групповых занятий.</p>
+        <div class="gym__content-wrapper">
+          <div class="gym__text-wrapper">
+            <h2 class="gym__title">Тренажерный зал</h2>
+            <span class="gym__subtitle">Просторный зал площадью 900 кв/м</span>
+            <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
+              тела и здоровья. Тренажерный
+              зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p class="gym__description gym__description--second">
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+              несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <img class="gym__image" src="img/gym-image.jpg" srcset="img/gym-image@2x.jpg" alt="Тренажерный зал">
+          <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
-        <img class="gym__image" src="img/gym-image.jpg" srcset="img/gym-image@2x.jpg" alt="Тренажерный зал">
-        <iframe  class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
       </section>
       <section class="passes">
-        <h2 class="passes__title">Абонементы</h2>
-        <ul class="passes__list">
-          <li class="passes__list-item">
-            <h3 class="passes__option-title">С тренером</h3>
-            <span class="passes__option-subtitle">12 занятий</span>
-            <span class="passes__price">5000</span>
-            <a class="passes__button">купить абонемент</a>
-          </li>
-          <li class="passes__list-item">
-            <h3 class="passes__option-title">Дневной</h3>
-            <span class="passes__option-subtitle">с 8:00 до 17:00</span>
-            <span class="passes__price">1700</span>
-            <a class="passes__button">купить абонемент</a>
-          </li>
-          <li class="passes__list-item">
-            <h3 class="passes__option-title">Полный день</h3>
-            <span class="passes__option-subtitle">с 8:00 до 22:00</span>
-            <span class="passes__price">2700</span>
-            <a class="passes__button">купить абонемент</a>
-          </li>
-        </ul>
+        <div class="passes__content-wrapper">
+          <h2 class="passes__title">Абонементы</h2>
+          <div data-tabs="parent">
+            <div class="passes__tabs-list" data-tabs="controls">
+              <button class="passes__tab is-active" type="button" data-tabs="control">1 месяц</button>
+              <button class="passes__tab" type="button" data-tabs="control">6 месяцев</button>
+              <button class="passes__tab" type="button" data-tabs="control">12 месяцев</button>
+            </div>
+            <div>
+              <ul class="passes__list" data-tabs="content">
+                <li class="passes__list-item" data-tabs="element" tabindex="0">
+                  <h3 class="passes__option-title">С тренером</h3>
+                  <span class="passes__option-subtitle">12 занятий</span>
+                  <div class="passes__price-wrapper">
+                    <span class="passes__price-shadow">5000</span>
+                    <span class="passes__price">5000</span>
+                    <svg class="passes__money-icon" width="30" height="42" viewBox="0 0 30 42">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a class="passes__button" href="#">купить&nbsp;абонемент</a>
+                </li>
+                <li class="passes__list-item" data-tabs="element">
+                  <h3 class="passes__option-title">Дневной</h3>
+                  <span class="passes__option-subtitle">с 8:00 до 17:00</span>
+                  <div class="passes__price-wrapper">
+                    <span class="passes__price-shadow">1700</span>
+                    <span class="passes__price">1700</span>
+                    <svg class="passes__money-icon" width="30" height="42" viewBox="0 0 30 42">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a class="passes__button" href="#">купить&nbsp;абонемент</a>
+                </li>
+                <li class="passes__list-item" data-tabs="element">
+                  <h3 class="passes__option-title">Полный день</h3>
+                  <span class="passes__option-subtitle">с 8:00 до 22:00</span>
+                  <div class="passes__price-wrapper">
+                    <span class="passes__price-shadow">2700</span>
+                    <span class="passes__price">2700</span>
+                    <svg class="passes__money-icon" width="30" height="42" viewBox="0 0 30 42">
+                      <use xlink:href="img/sprite.svg#ruble"></use>
+                    </svg>
+                  </div>
+                  <a class="passes__button" href="#">купить&nbsp;абонемент</a>
+                </li>
+              </ul>
+              <picture>
+                <source media="(max-width: 1199px)" srcset="img/freeweights.png">
+                <img class="passes__container-icon" src="img/freeweights-desk.png" srcset="img/freeweights-desk@2x.png"
+                  alt="блины">
+              </picture>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">SUPER GAMES</h2>
-          <span class="promo__description">Ежегодные соревнования по CrossFit</span>
-          <button class="promo__button">заполнить заявку</button>
-          <img src="/img/trainer-3.jpg" alt="Мужчина топлес">
+        <div class="promo__content-wrapper">
+          <div class="promo__text-wrapper">
+            <div class="promo__title-container">
+              <h2 class="promo__title">SUPER GAMES</h2>
+              <div class="promo__details">
+                <h5 class="promo__details-title">Дата</h5>
+                <div class="promo__details-container">
+                  <span class="promo__details-number">7</span>
+                  <span class="promo__details-text">Мартa 2019</span>
+                </div>
+                <h5 class="promo__details-title">Время</h5>
+                <div class="promo__details-container">
+                  <span class="promo__details-number">12:00</span>
+                </div>
+              </div>
+            </div>
+            <span class="promo__description">Ежегодные соревнования по CrossFit</span>
+            <button class="promo__button">заполнить&nbsp;заявку</button>
+          </div>
+          <img class="promo__image" src="/img/promo-pic.jpg" srcset="/img/promo-pic@2x.jpg" alt="Мужчина топлес">
         </div>
       </section>
       <section class="trainers">
-        <h2 class="trainers__title">Тренеры</h2>
+        <div class="trainers__content-wrapper">
+          <h2 class="trainers__title">Тренеры</h2>
+          <div class="swiper" id="swiper-trainers">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="width: 100px;">Slide 1</div>
+              <div class="swiper-slide" style="width: 100px;">Slide 2</div>
+              <div class="swiper-slide" style="width: 100px;">Slide 3</div>
+            </div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+        </div>
       </section>
       <section class="advantages">
-        <h2 class="advantages__title">Наши преимущества</h2>
-        <ul class="advantages__list">
-          <li class="advantages__list-item">
-            <div class="advantages__number-wrapper">
-              <span>900</span>
-              <span>кв/м</span>
-            </div>
-            <div class="advantages__text-wrapper">
-              <h3>Площадь</h3>
-              <p>Занимайтесь без очередей и толпучки</p>
-            </div>
-          </li>
-          <li class="advantages__list-item">
-            <div class="advantages__number-wrapper">
-              <span>70</span>
-              <span>машин</span>
-            </div>
-            <div class="advantages__text-wrapper">
-              <h3 class="advantages__text-title">Собственная парковка</h3>
-              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
-            </div>
-          </li>
-          <li class="advantages__list-item advantages__list-item--accent">
-            <div class="advantages__number-wrapper">
-              <span>100</span>
-              <span>Тренажеров</span>
-            </div>
-            <div class="advantages__text-wrapper">
-              <p>Современные тренажеры на все группы мышц</p>
-            </div>
-          </li>
-          <li class="advantages__list-item">
-            <div class="advantages__number-wrapper">
-              <span>350</span>
-              <span>мест</span>
-            </div>
-            <div class="advantages__text-wrapper">
-              <h3>Комфорт</h3>
-              <p>Просторные раздевалки,
-                душевые, фен, Wi-Fi, кулеры</p>
-            </div>
-          </li>
-          <li class="advantages__list-item">
-            <div class="advantages__number-wrapper">
-              <span>5+</span>
-              <span>лет</span>
-            </div>
-            <div class="advantages__text-wrapper">
-              <h3>Тренерский опыт</h3>
-              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-            </div>
-          </li>
-        </ul>
+        <div class="advantages__content-wrapper">
+          <h2 class="advantages__title">Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__list-item">
+              <div class="advantages__number-wrapper">
+                <span>900</span>
+                <span>кв/м</span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и толпучки</p>
+              </div>
+            </li>
+            <li class="advantages__list-item">
+              <div class="advantages__number-wrapper">
+                <span>70</span>
+                <span>машин</span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <h3 class="advantages__text-title">Собственная парковка</h3>
+                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
+            </li>
+            <li class="advantages__list-item advantages__list-item--accent">
+              <div class="advantages__number-wrapper">
+                <span>100</span>
+                <span>Тренажеров</span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <p>Современные тренажеры на все группы мышц</p>
+              </div>
+            </li>
+            <li class="advantages__list-item">
+              <div class="advantages__number-wrapper">
+                <span>350</span>
+                <span>мест</span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <h3>Комфорт</h3>
+                <p>Просторные раздевалки,
+                  душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </li>
+            <li class="advantages__list-item">
+              <div class="advantages__number-wrapper">
+                <span>5+</span>
+                <span>лет</span>
+              </div>
+              <div class="advantages__text-wrapper">
+                <h3>Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="deals">
-        <h2 class="deals__title">Акции</h2>
-        <div class="deals__bigger-banner">
-          <span>Год</span>
-          <h3>4999</h3>
-          <p>Безлимитный абонемент в тренажерный зал</p>
-          <a>подробнее</a>
-          <img src="#" alt="Спортивная девушка">
+        <div class="deals__content-wrapper">
+          <h2 class="deals__title">Акции</h2>
+          <div class="deals__bigger-banner">
+            <span>Год</span>
+            <h3>4999</h3>
+            <p>Безлимитный абонемент в тренажерный зал</p>
+            <a>подробнее</a>
+            <img src="#" alt="Спортивная девушка">
+          </div>
+          <ul class="deals__list">
+            <li class="deals__list-item">
+              <h3 class="deals__item-title">Месяц бесплатно</h3>
+              <p class="deals__item-info">Приведи друга, получи абонемент в подарок</p>
+              <a class="deals__item-link">подробнее</a>
+            </li>
+            <li class="deals__list-item">
+              <h3 class="deals__item-title">Скидка 20%</h3>
+              <p class="deals__item-info">Корпоративный фитнес с командой</p>
+              <a class="deals__item-button">подробнее</a>
+            </li>
+          </ul>
         </div>
-        <ul class="deals__list">
-          <li class="deals__list-item">
-            <h3 class="deals__item-title">Месяц бесплатно</h3>
-            <p class="deals__item-info">Приведи друга, получи абонемент в подарок</p>
-            <a class="deals__item-link">подробнее</a>
-          </li>
-          <li class="deals__list-item">
-            <h3 class="deals__item-title">Скидка 20%</h3>
-            <p class="deals__item-info">Корпоративный фитнес с командой</p>
-            <a class="deals__item-button">подробнее</a>
-          </li>
-        </ul>
       </section>
       <section class="faq">
-        <div class="faq__tabs">
-          <h2>Вопросы и ответы</h2>
-          <div class="faq__tabs-list" role="tablist" aria-labelledby="tablist-1" class="automatic">
-            <button class="faq__tabs-button" id="tab-1" type="button" role="tab" aria-selected="true"
-              aria-controls="tabpanel-1">
-              <span class="faq__tabs-button-name">Центр</span>
-            </button>
-            <button class="faq__tabs-button" id="tab-2" type="button" role="tab" aria-selected="false"
-              aria-controls="tabpanel-2">
-              <span class="faq__tabs-button-name">Абонемент</span>
-            </button>
-            <button class="faq__tabs-button" id="tab-3" type="button" role="tab" aria-selected="false"
-              aria-controls="tabpanel-3">
-              <span class="faq__tabs-button-name">Услуги</span>
-            </button>
-            <button class="faq__tabs-button" id="tab-4" type="button" role="tab" aria-selected="false"
-              aria-controls="tabpanel-4">
-              <span class="faq__tabs-button-name">Правила</span>
-            </button>
-          </div>
-          <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-            // accordion
-          </div>
-          <div id="tabpanel-2" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-2">
-            // accordion
-          </div>
-          <div id="tabpanel-3" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-3">
-            // accordion
-          </div>
-          <div id="tabpanel-4" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-4">
-            // accordion
+        <div class="faq__content-wrapper">
+          <div class="faq__tabs">
+            <h2>Вопросы и ответы</h2>
+            <div class="faq__tabs-list" role="tablist" aria-labelledby="tablist-1" class="automatic">
+              <button class="faq__tabs-button" id="tab-1" type="button" role="tab" aria-selected="true"
+                aria-controls="tabpanel-1">
+                <span class="faq__tabs-button-name">Центр</span>
+              </button>
+              <button class="faq__tabs-button" id="tab-2" type="button" role="tab" aria-selected="false"
+                aria-controls="tabpanel-2">
+                <span class="faq__tabs-button-name">Абонемент</span>
+              </button>
+              <button class="faq__tabs-button" id="tab-3" type="button" role="tab" aria-selected="false"
+                aria-controls="tabpanel-3">
+                <span class="faq__tabs-button-name">Услуги</span>
+              </button>
+              <button class="faq__tabs-button" id="tab-4" type="button" role="tab" aria-selected="false"
+                aria-controls="tabpanel-4">
+                <span class="faq__tabs-button-name">Правила</span>
+              </button>
+            </div>
+            <div id="tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+              // accordion
+            </div>
+            <div id="tabpanel-2" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-2">
+              // accordion
+            </div>
+            <div id="tabpanel-3" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+              // accordion
+            </div>
+            <div id="tabpanel-4" class="is-hidden" role="tabpanel" tabindex="0" aria-labelledby="tab-4">
+              // accordion
+            </div>
           </div>
         </div>
       </section>
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__content-wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+        </div>
       </section>
       <section class="additional-info">
+        <!-- <div class="additional-info__content-wrapper"> -->
         <div class="appointment-field">
           <form class="appointment-field__form">
             <h3 class="appointment-field__form-title">Бесплатное занятие</h3>
@@ -245,6 +322,7 @@
             </li>
           </ul>
         </div>
+        <!-- </div> -->
       </section>
     </main>
     <footer class="footer">
@@ -336,7 +414,6 @@
       </div>
     </div>
   </div>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

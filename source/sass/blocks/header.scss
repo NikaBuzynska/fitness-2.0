@@ -12,6 +12,12 @@
     }
 }
 
+.header__content-wrapper {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header__upper-wrapper {
     display: flex;
     justify-content: space-between;
@@ -45,7 +51,7 @@
     font-weight: 600;
     font-size: 36px;
     letter-spacing: 0.72px;
-    color: #ffffff;
+    color: $color-default-white;
     text-transform: uppercase;
 
     @media (max-width: $tablet-width) {

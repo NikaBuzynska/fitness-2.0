@@ -14,6 +14,21 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  const swiper = new Swiper('#swiper-trainers', {
+    direction: 'horizontal',
+    autoHeight: true, 
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

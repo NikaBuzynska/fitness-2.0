@@ -43,6 +43,11 @@
     }
 }
 
+.passes__content{
+    display: flex;
+    justify-content: center;
+}
+
 .passes__tabs-list {
     position: relative;
     margin-bottom: 39px;
@@ -76,6 +81,8 @@
     margin: 0 22px 11px;
     padding: 0;
     border: none;
+    cursor: pointer;
+
     &:first-child {
         margin-left: 0;
     }
@@ -112,7 +119,7 @@
 
 
 .passes__list {
-    position: relative;
+    // position: relative;
     display: flex;
     gap: 42px;
     padding: 0;

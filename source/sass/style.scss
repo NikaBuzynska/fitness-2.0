@@ -4,6 +4,11 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 @import "vendor/swiper";
+// Tabs
+@import "vendor/data-tabs";
+
+// Accordion 
+@import "vendor/data-accordion";
 
 // Global
 // ---------------------------------
@@ -32,6 +37,7 @@
 @import "blocks/passes";
 @import "blocks/promo";
 @import "blocks/trainers";
+@import "blocks/advantages";
 @import "blocks/deals";
 @import "blocks/faq";
 @import "blocks/reviews";

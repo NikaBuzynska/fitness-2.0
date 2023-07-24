@@ -1,8 +1,13 @@
 .trainers__content-wrapper {
+    position: relative;
     max-width: 1366px;
     margin-left: auto;
     margin-right: auto;
-    padding: 120px 20px;
+    padding: 120px 103px;
+    
+    @media (max-width: $tablet-width) {
+        padding: 108px 101px;
+    }
 }
 
 .trainers__title {
@@ -10,29 +15,98 @@
     font-size: 54px;
     font-weight: 600;
     letter-spacing: 0.96px;
-    margin: 5px 0 44px 4px;
+    margin: 5px 0 69px 4px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 42px;
+        letter-spacing: 1.26px;
+        text-align: center;
+        margin: 5px 6px 45px 0;
+    }
 }
 
 .swiper {
     position: relative;
-    padding-left: 103px;
-    padding-right: 103px;
-}
-.swiper-wrapper{
-    width: 1100px;
-    margin: 0 auto;
 }
 
 .trainers__swiper-slide {
-}
-
-.swiper-slide {
+    position: relative;
     text-align: center;
     font-size: 18px;
-    background: rgb(9, 165, 24);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+
+}
+
+.trainers .swiper-wrapper .trainers-image {
+    
+    @media (max-width: $tablet-width) {
+        width: 268px;
+        height: 294px;
+    }
+}
+
+
+.trainers__description {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $color-default-white;
+    bottom: 23px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.trainers__slide-name {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.trainers__slide-profile {
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B6BDCC;
+    margin-top: 0;
+}
+
+.trainers__slide-list {
+    display: none;
+    text-align: left;
+    padding-left: 49px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.trainers__slide-list-item {
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    margin-left: 3px;
+    padding-left: 20px;
+
+    &::before {
+        position: absolute;
+        font-size: 33px;
+        left: 0;
+        content:"•";
+    }
+}
+
+.trainers__swiper-slide:hover .trainers__description {
+    top: 0;
+    bottom: 0;
+    padding: 52px 0 0;
+    background-color: $resolution-blue;
+    opacity: 0.89;
+}
+
+.trainers__swiper-slide:hover .trainers__slide-profile,
+.trainers__swiper-slide:hover .trainers__slide-list {
+    display: block;
 }
 
 .swiper-button-prev {
@@ -46,4 +120,81 @@
 .trainers__image {
     width: 260px;   
     height: 294px;
+}
+
+//buttons swiper 
+
+// .trainers__swiper-button-prev, .trainers__swiper-button-next {
+//     position: relative;
+//     width: 20px;
+//     height: 2px;
+//     // background: black;
+//     margin: 20px;
+// }
+
+// .trainers__swiper-button-prev::before, .trainers__swiper-button-next::before,
+// .trainers__swiper-button-prev::after, .trainers__swiper-button-next::after {
+//     content: "";
+//     position: absolute;
+//     width: 14px;
+//     height: 2px;
+//     background: black;
+// }
+
+
+.trainers__swiper-button-prev,
+.trainers__swiper-button-next {
+    background: none;
+    border: none;
+    position: absolute;
+    // top: 50%;
+    bottom: 245px;
+    transform: translateY(-50%);
+    font-size: 0; /* to hide the default text */
+}
+
+// .trainers__swiper-button-prev::before,
+// .trainers__swiper-button-next::before {
+//     content: '';
+//     display: block;
+//     width: 20px;
+//     height: 2px;
+//     background: black;
+// }
+
+.trainers__swiper-button-prev::after,
+.trainers__swiper-button-next::after {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    border-top: 1px solid #AFAFAF;
+    border-right: 1px solid #AFAFAF;
+    transform-origin: center;
+}
+
+.trainers__swiper-button-prev {
+    left: 50px;
+}
+
+.trainers__swiper-button-prev::before {
+    transform: translateY(-6px);
+}
+
+.trainers__swiper-button-prev::after {
+    transform: rotate(226deg);
+    margin-top: -6px;
+}
+
+.trainers__swiper-button-next {
+    right: 50px;
+}
+
+.trainers__swiper-button-next::before {
+    transform: translateY(4px);
+}
+
+.trainers__swiper-button-next::after {
+    transform: rotate(45deg);
+    margin-top: 2px;
 }

@@ -46,6 +46,21 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  //swiper-reviews
+
+  const reviewsSwiper = new Swiper('#swiper-reviews', {
+    direction: 'horizontal',
+    autoHeight: true, 
+    loop: true,
+    slidesPerView: 1,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.reviews__swiper-button-next',
+      prevEl: '.reviews__swiper-button-prev',
+    },
+  });
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

@@ -398,8 +398,7 @@
             <a class="deals__bigger-banner-button">подробнее</a>
           </div>
           <div class="deals__image-wrapper">
-            <img class="deals__image" src="img/фото.jpg" srcset="img/фото@2x.jpg"
-              alt="Спортивная девушка">
+            <img class="deals__image" src="img/deals-image.jpg" srcset="img/deals-image@2x.jpg" alt="Спортивная девушка">
           </div>
         </div>
         <ul class="deals__list">
@@ -419,8 +418,8 @@
   </section>
   <section class="faq">
     <div class="faq__content-wrapper">
+      <h2 class="faq__title">Вопросы и ответы</h2>
       <div class="faq__tabs" data-tabs="parent">
-        <h2>Вопросы и ответы</h2>
         <div class="faq__tabs-list" data-tabs="controls" role="tablist" aria-labelledby="tablist-1" class="automatic">
           <button class="faq__tabs-button" id="tab-1" type="button" data-tabs="control" role="tab" aria-selected="true"
             aria-controls="tabpanel-1">
@@ -439,48 +438,48 @@
             <span class="faq__tabs-button-name">Правила</span>
           </button>
         </div>
-        <div class="tabs__content" data-tabs="content">
-          <div id="tabpanel-1" data-tabs="element" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+        <div class="faq__tabs-accordion-container tabs__content" data-tabs="content">
+          <div class="faq__tabs-accordion-wrapper" id="tabpanel-1" data-tabs="element" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
             <div class="accordion" data-accordion="parent" data-single="data-single">
               <div class="accordion__element is-active" data-accordion="element">
-                <button class="accordion__button btn btn--aquamarine" type="button"
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="faq__accordion-content accordion__content" data-accordion="content">
+                  <div class="faq__accordion-wrapper accordion__wrapper">
+                    <p class="faq__accordion-description">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале
+                      всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                      по тренажеру или технике выполнения упражнения.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button accordion__button btn btn--aquamarine" type="button"
                   data-accordion="button">Открыть</button>
                 <div class="accordion__content" data-accordion="content">
                   <div class="accordion__wrapper">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
                       quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
                   </div>
                 </div>
               </div>
               <div class="accordion__element" data-accordion="element">
-                <button class="accordion__button accordion__button btn btn--aquamarine" type="button"
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
                   data-accordion="button">Открыть</button>
                 <div class="accordion__content" data-accordion="content">
                   <div class="accordion__wrapper">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
                       quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
                   </div>
                 </div>
               </div>
               <div class="accordion__element" data-accordion="element">
-                <button class="accordion__button btn btn--aquamarine" type="button"
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
                   data-accordion="button">Открыть</button>
                 <div class="accordion__content" data-accordion="content">
                   <div class="accordion__wrapper">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
-                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
-                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion__element" data-accordion="element">
-                <button class="accordion__button btn btn--aquamarine" type="button"
-                  data-accordion="button">Открыть</button>
-                <div class="accordion__content" data-accordion="content">
-                  <div class="accordion__wrapper">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
                       perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
                       quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
                   </div>
@@ -489,13 +488,148 @@
             </div>
           </div>
           <div id="tabpanel-2" data-tabs="element" role="tabpanel" tabindex="0" aria-labelledby="tab-2">
-            accordion 2
+            <div class="accordion" data-accordion="parent" data-single="data-single">
+              <div class="accordion__element is-active" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Занятия с
+                  тренером входят в абонемент?</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале
+                      всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                      по тренажеру или технике выполнения упражнения.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Можно ли заморозить абонемент?</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Есть ли
+                  лимит по посещениям тренажерного зала и групповых занятий?</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Что такое
+                  семейный доступ и доступ для друзей?</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div id="tabpanel-3" data-tabs="element" role="tabpanel" tabindex="0" aria-labelledby="tab-3">
-            accordion 3
+            <div class="accordion" data-accordion="parent" data-single="data-single">
+              <div class="accordion__element is-active" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале
+                      всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                      по тренажеру или технике выполнения упражнения.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div id="tabpanel-4" data-tabs="element" role="tabpanel" tabindex="0" aria-labelledby="tab-4">
-            accordion 4
+            <div class="accordion" data-accordion="parent" data-single="data-single">
+              <div class="accordion__element is-active" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале
+                      всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                      по тренажеру или технике выполнения упражнения.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__element" data-accordion="element">
+                <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
+                  data-accordion="button">Открыть</button>
+                <div class="accordion__content" data-accordion="content">
+                  <div class="accordion__wrapper">
+                    <p class="faq__accordion-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
+                      perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae,
+                      quidem sint laboriosam reiciendis accusantium iusto distinctio!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -504,6 +638,25 @@
   <section class="reviews">
     <div class="reviews__content-wrapper">
       <h2 class="reviews__title">Отзывы</h2>
+      <div class="reviews__swiper swiper" id="swiper-reviews">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper reviews__swiper-wrapper">
+          <!-- Slides -->
+          <div class="reviews__swiper-slide swiper-slide">
+            <img class="reviews__user-avatar" src="img/reviewer-avatar.png" srcset="img/reviewer-avatar@2x.png" alt="">
+            <div class="reviews__user-info">
+              <h3 class="reviews__user-name">Анна Орлова</h3>
+              <p class="reviews__user-review">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
+          <div class="reviews__swiper-slide swiper-slide">Slide 2</div>
+          <div class="reviews__swiper-slide swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need navigation buttons -->
+      </div>
+      <div class="reviews__swiper-button-prev">prev</div>
+      <div class="reviews__swiper-button-next">next</div>
     </div>
   </section>
   <section class="additional-info">
@@ -512,14 +665,16 @@
       <form class="appointment-field__form">
         <h3 class="appointment-field__form-title">Бесплатное занятие</h3>
         <fieldset class="appointment-field__form-group">
-          <label class="appointment-field__form-label">
-            <span class="appointment-field__form-input-title">Имя</span>
-            <input class="appointment-field__form-input" type="text" name="name">
-          </label>
-          <label class="appointment-field__form-label">
-            <span class="appointment-field__form-input-title">Телефон</span>
-            <input class="appointment-field__form-input" type="tel" name="tel">
-          </label>
+          <div class="appointment-field__form-group-wrapper">
+            <label class="appointment-field__form-label">
+              <span class="appointment-field__form-input-title visually-hidden">Имя</span>
+              <input class="appointment-field__form-input" type="text" name="name" placeholder="Имя">
+            </label>
+            <label class="appointment-field__form-label">
+              <span class="appointment-field__form-input-title visually-hidden">Телефон</span>
+              <input class="appointment-field__form-input" type="tel" name="tel" placeholder="Телефон">
+            </label>
+          </div>
           <button class="appointment-field__form-button" type="submit">отправить</button>
         </fieldset>
       </form>
@@ -531,15 +686,15 @@
           <h4 class="contacts__list-item-title">Адрес:</h4>
           <p class="contacts__list-item-description">г. Омск, ул. 60 лет Октября, 7</p>
         </li>
-        <li>
+        <li class="contacts__list-item">
           <h4 class="contacts__list-item-title">График работы:</h4>
           <p class="contacts__list-item-description">Пн-Вс: с 8:00 до 22:00</p>
         </li>
-        <li>
+        <li class="contacts__list-item">
           <h4 class="contacts__list-item-title">Телефон:</h4>
           <p class="contacts__list-item-description">8-800-555-55-55</p>
         </li>
-        <li>
+        <li class="contacts__list-item">
           <h4 class="contacts__list-item-title">Email:</h4>
           <p class="contacts__list-item-description">omsk@supergym.ru</p>
         </li>

@@ -2587,7 +2587,6 @@ ul {
   background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
   border: none;
   border-radius: 50%;
-  overflow: hidden;
   cursor: pointer;
 }
 

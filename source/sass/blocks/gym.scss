@@ -181,9 +181,44 @@
     background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
     border: none;
     border-radius: 50%;
-    overflow: hidden;
+    // overflow: hidden;
     cursor: pointer;
+
+    // &::after {
+    //     position: absolute;
+    //     // background-color: $color-transparent;
+    //     width: 100px;
+    //     height: 100px;
+    //     border: 1px solid $color-transparent;
+    //     background: linear-gradient($color-transparent, $color-transparent) padding-box,
+    //         linear-gradient(151deg, #ED0233 0%, #003EB7 100%) border-box;
+    //     // border: 5px solid transparent;
+    //     // border-image: ;
+    //     border-radius: 50%;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     pointer-events: none; /* Ensure the circle doesn't interfere with button clicks */
+    //     // z-index: -1; /* Push the circle element behind the button */
+    //     content: "";
+    // }
 }
+
+// .gym__play-button::before {
+//     content: '';
+//     position: absolute;
+//     width: 100px;
+//     height: 100px;
+//     border: 1px solid transparent;
+//     border-radius: 50%;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     z-index: -1;
+//     pointer-events: none;
+//     background: linear-gradient(151deg, #ED0233, #003EB7);
+//     opacity: 0.2;
+//   }
 
 .gym__play-button-icon {
     position: absolute;

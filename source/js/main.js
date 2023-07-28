@@ -61,6 +61,19 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  
+  var playButton = document.querySelector('.gym__play-button');
+  var video = document.querySelector('.gym__video');
+  var image = document.querySelector('.gym__video-image');
+
+  playButton.addEventListener('click', function() {
+
+    playButton.style.display = 'none';
+    image.style.display = 'none';
+
+    video.style.display = 'block';
+  });
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

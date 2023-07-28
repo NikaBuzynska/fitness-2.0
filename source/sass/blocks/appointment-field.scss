@@ -2,7 +2,16 @@
     width: 50%;
     padding: 56px 168px 66px 100px;
     color: $color-default-white;
-    background-color: $resolution-blue;
+    background-color: $Sapphire;
+
+    @media (max-width: $tablet-width) {
+        width: 100%;
+        padding: 61px 163px 67px 133px;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding: 64px 15px 67px;
+    }
 }
 
 .appointment-field__form {
@@ -17,6 +26,18 @@
     line-height: 84.24px;
     letter-spacing: 1.62px;
     margin: 0 0 17px 3px;
+
+    @media (max-width: $tablet-width) {
+        font-size: 42px;
+        letter-spacing: 1.1px;
+        line-height: normal;
+        margin: 0 0 34px 0px;
+    }
+
+    @media (max-width: $mobile-width) {
+        font-size: 32px;
+        letter-spacing: 0.96px;
+    }
 }
 
 .appointment-field__form-group {
@@ -29,11 +50,31 @@
 
 .appointment-field__form-group-wrapper {
     margin-bottom: 26px;
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 36px;
+    }
+
 }
 
 .appointment-field__form-label {
     &:first-child {
         margin-right: 30px;
+    }
+
+    @media (max-width: $tablet-width) {
+        &:first-child {
+            margin-right: 60px;
+        }
+    }
+
+    @media (max-width: $mobile-width) {
+        display: inline-block;
+        margin-right: 0;
+        &:first-of-type {
+            margin-bottom: 33px;
+
+        }
     }
 }
 
@@ -41,9 +82,18 @@
     font-size: 14px;
     width: 190px;
     padding: 3px 0 6px 0;
-    background-color: $resolution-blue;
+    background-color: $Sapphire;
     border: none;
     border-bottom: 1px solid $light-slate-grey;
+
+    @media (max-width: $tablet-width) {
+        width: 204px;
+    }
+
+    @media (max-width: $mobile-width) {
+        // width: 100%;
+        width: 290px;
+    }
 }
 
 .appointment-field__form-input::placeholder {
@@ -56,8 +106,15 @@
     font-weight: 700;
     letter-spacing: 0.7px;
     text-transform: uppercase;
+    width: 100%;
     padding: 18px 160px;
     color: $color-default-white;
-    background-color: $resolution-blue;
+    background-color: $Sapphire;
     border: 3px solid $color-default-white;
+
+    @media (max-width: $mobile-width) {
+        padding-left: 0;
+        padding-right: 0;
+        width: 290px;
+    }
 }

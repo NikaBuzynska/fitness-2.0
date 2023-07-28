@@ -8,6 +8,11 @@
     @media (max-width: $tablet-width) {
         padding: 108px 101px;
     }
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+        padding: 63px 47px 70px;
+    }
 }
 
 .trainers__title {
@@ -23,6 +28,12 @@
         text-align: center;
         margin: 5px 6px 45px 0;
     }
+
+    @media (max-width: $mobile-width) {
+        font-size: 32px;
+        letter-spacing: 0.96px;
+        margin-bottom: 51px;
+    }
 }
 
 .swiper {
@@ -33,11 +44,9 @@
     position: relative;
     text-align: center;
     font-size: 18px;
-
 }
 
 .trainers .swiper-wrapper .trainers-image {
-    
     @media (max-width: $tablet-width) {
         width: 268px;
         height: 294px;
@@ -118,49 +127,33 @@
 }
 
 .trainers__image {
-    width: 260px;   
+    width: 264px;   
     height: 294px;
+
+    @media (max-width: $mobile-width) {
+        height: 274px;
+    }
 }
 
 //buttons swiper 
-
-// .trainers__swiper-button-prev, .trainers__swiper-button-next {
-//     position: relative;
-//     width: 20px;
-//     height: 2px;
-//     // background: black;
-//     margin: 20px;
-// }
-
-// .trainers__swiper-button-prev::before, .trainers__swiper-button-next::before,
-// .trainers__swiper-button-prev::after, .trainers__swiper-button-next::after {
-//     content: "";
-//     position: absolute;
-//     width: 14px;
-//     height: 2px;
-//     background: black;
-// }
-
 
 .trainers__swiper-button-prev,
 .trainers__swiper-button-next {
     background: none;
     border: none;
     position: absolute;
-    // top: 50%;
     bottom: 245px;
     transform: translateY(-50%);
-    font-size: 0; /* to hide the default text */
-}
+    font-size: 0;
 
-// .trainers__swiper-button-prev::before,
-// .trainers__swiper-button-next::before {
-//     content: '';
-//     display: block;
-//     width: 20px;
-//     height: 2px;
-//     background: black;
-// }
+    @media (max-width: $tablet-width) {
+        bottom: 234px;
+    }
+
+    @media (max-width: $mobile-width) {
+        bottom: 185px;
+    }
+}
 
 .trainers__swiper-button-prev::after,
 .trainers__swiper-button-next::after {
@@ -171,10 +164,19 @@
     border-top: 1px solid #AFAFAF;
     border-right: 1px solid #AFAFAF;
     transform-origin: center;
+
+    @media (max-width: $mobile-width) {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .trainers__swiper-button-prev {
     left: 50px;
+
+    @media (max-width: $mobile-width) {
+        left: 18px;
+    }
 }
 
 .trainers__swiper-button-prev::before {
@@ -188,6 +190,10 @@
 
 .trainers__swiper-button-next {
     right: 50px;
+
+    @media (max-width: $mobile-width) {
+        right: 18px;
+    }
 }
 
 .trainers__swiper-button-next::before {

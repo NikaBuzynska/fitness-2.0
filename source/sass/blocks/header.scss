@@ -1,8 +1,7 @@
 .header {
     color: #ffffff;
-    // padding: 30px 201px 51px;
-    // background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
     background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    
     @media (max-width: $tablet-width) {
         background: conic-gradient(from 155.49deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
     }
@@ -76,7 +75,8 @@
     @media (max-width: $tablet-width) {
         font-size: 24px;
         font-weight: 700;
-        margin-top: 40px;
+        letter-spacing: 0.48px;
+        margin-top: 38px;
         margin-bottom: 20px;
     }
 
@@ -121,12 +121,13 @@
 
     @media (max-width: $tablet-width) {
         font-size: 34px;
-        margin: 0 2px 16px 0;
+        margin: 0 2px 14px 0;
     }
 
     @media (max-width: $mobile-width) {
         font-size: 28px;
         letter-spacing: 0.84px;
+        margin-bottom: 17px;
     }
 }
 
@@ -165,7 +166,7 @@
     @media (max-width: $tablet-width) {
         font-size: 72px;
         letter-spacing: 2.6px;
-        margin-bottom: 51px;
+        margin-bottom: 53px;
         text-transform: none;
     }
 
@@ -212,7 +213,6 @@
     }
 }
 
-
 .header__image {
     width: 500px;
     height: 556px;
@@ -221,5 +221,6 @@
     @media (max-width: $tablet-width) {
         width: 324px;
         height: 390px;
+        object-fit: cover;
     }
 }

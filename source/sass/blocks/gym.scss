@@ -4,7 +4,7 @@
     
     @media (max-width: $tablet-width) {
         flex-direction: column;
-        padding: 100px 45px 183px;
+        padding: 102px 45px 183px;
     }
     
     @media (max-width: $mobile-width) {
@@ -123,10 +123,13 @@
     }
 }
 
-.gym__video {
+.gym__video-container {
+    width: 364px;
+    height: 228px;
     position: absolute;
     bottom: 120px;
-    left: 540px;
+    right: 50%;
+    margin-right: -182px;
 
     @media (max-width: $tablet-width) {
         width: 266px;
@@ -141,4 +144,49 @@
         width: 100%;
         height: 167px;
     }
+}
+
+.gym__video-image {
+    
+}
+
+.gym__video {
+    display: none;
+    // position: absolute;
+    // bottom: 120px;
+    // left: 540px;
+
+    // @media (max-width: $tablet-width) {
+        width: 266px;
+        height: 167px;
+    //     left: 251px;
+    //     bottom: 101px;
+    // }
+
+    // @media (max-width: $mobile-width) {
+        position: static;
+    //     margin-top: 40px;
+        width: 100%;
+    //     height: 167px;
+    // }
+}
+
+.gym__play-button {
+    position: absolute;
+    top: 34%;
+    right: 40%;
+    width: 72px;
+    height: 72px;
+    padding: 0;
+    background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gym__play-button-icon {
+    position: absolute;
+    top: -13px;
+    left: -14px;
 }

@@ -2,14 +2,14 @@
     max-width: 1366px;
     margin-left: auto;
     margin-right: auto;
-    padding: 135px 103px 120px;
+    padding: 135px 103px 117px;
 
     @media (max-width: $tablet-width) {
-        padding: 103px 45px 100px;
+        padding: 103px 45px 60px;
     }
 
     @media (max-width: $mobile-width) {
-        padding: 58px 15px 70px;
+        padding: 68px 15px 31px;
     }
 }
 

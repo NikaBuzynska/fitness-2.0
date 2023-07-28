@@ -1,3 +1,7 @@
 .additional-info {
     display: flex;
+
+    @media (max-width: $tablet-width) {
+        flex-direction: column;
+    }
 }

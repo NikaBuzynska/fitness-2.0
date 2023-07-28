@@ -119,7 +119,6 @@
 
 
 .passes__list {
-    // position: relative;
     display: flex;
     gap: 42px;
     padding: 0;
@@ -154,7 +153,7 @@
     }
 
     @media (max-width: $tablet-width) {
-        padding: 68px 76px 64px;
+        padding: 68px 115px 64px;
     }
 
     @media (max-width: $mobile-width) {
@@ -190,7 +189,6 @@
     top: 14px;
     left: 0;
     font-size: 100px;
-    // font-style: normal;
     font-weight: 700;
     line-height: 150px;
     color: #E8E8E8;
@@ -198,6 +196,12 @@
 
     @media (max-width: $tablet-width) {
         left: 41px;
+    }
+
+    @media (max-width: $mobile-width) {
+        line-height: 120px;
+        font-size: 80px;
+        left: 21px;
     }
 }
 

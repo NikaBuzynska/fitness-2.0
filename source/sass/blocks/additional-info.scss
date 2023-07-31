@@ -1,7 +1,7 @@
 .additional-info {
-    display: flex;
+  display: flex;
 
-    @media (max-width: $tablet-width) {
-        flex-direction: column;
-    }
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
 }

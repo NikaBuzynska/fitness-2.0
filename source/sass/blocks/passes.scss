@@ -1,272 +1,273 @@
 .passes {
-    position: relative;
-    padding: 120px 103px;
-    background-color: $ghost-white;
+  position: relative;
+  padding: 120px 103px;
+  background-color: $ghost-white;
 
-    @media (max-width: $tablet-width) {
-        padding: 100px 163px;
-    }
+  @media (max-width: $tablet-width) {
+    padding: 100px 163px;
+  }
 
-    @media (max-width: $mobile-width) {
-        padding: 63px 15px;
-    }
+  @media (max-width: $mobile-width) {
+    padding: 63px 15px;
+  }
 }
 
 .passes__content-wrapper {
-    max-width: 1366px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .passes__title {
-    font-family: 'Alumni Sans', sans-serif;
-    font-weight: 600;
-    font-size: 54px;
-    letter-spacing: 1.62px;
-    margin-bottom: 38px;
-    margin-top: 22px;
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  letter-spacing: 1.62px;
+  margin-bottom: 38px;
+  margin-top: 22px;
 
-    @media (max-width: $tablet-width) {
-        font-size: 42px;
-        letter-spacing: 1.26px;
-        margin-top: 13px;
-        margin-bottom: 32px;
-        margin-right: 13px;
-    }
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-top: 13px;
+    margin-bottom: 32px;
+    margin-right: 13px;
+  }
 
-    @media (max-width: $mobile-width) {
-        font-size: 32px;
-        letter-spacing: 0.96px;
-        margin-top: 7px;
-        margin-bottom: 29px;    
-    }
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin-top: 7px;
+    margin-bottom: 29px;
+  }
 }
 
-.passes__content{
-    display: flex;
-    justify-content: center;
+.passes__content {
+  display: flex;
+  justify-content: center;
 }
 
 .passes__tabs-list {
-    position: relative;
-    margin-bottom: 39px;
-    
-    &::after {
-        position: absolute;
-        width: 341px;
-        height: 2px;
-        top: 39px;
-        left: 50%;
-        margin-left: -167px;
-        background-color: #78787833;
-        content: "";
+  position: relative;
+  margin-bottom: 39px;
 
-        @media (max-width: $mobile-width) {
-            width: 290px;
-            top: 37px;
-            left: 0;
-            margin-left: 0;
-        }
+  &::after {
+    position: absolute;
+    width: 341px;
+    height: 2px;
+    top: 39px;
+    left: 50%;
+    margin-left: -167px;
+    background-color: rgba(120, 120, 120, 0.2);
+    content: "";
+
+    @media (max-width: $mobile-width) {
+      width: 290px;
+      top: 37px;
+      left: 0;
+      margin-left: 0;
     }
+  }
 }
 
 .passes__tab {
-    position: relative;
-    font-family: "Roboto Condensed",sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    color: $Sapphire;
-    background-color: $color-transparent;
-    margin: 0 22px 11px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
+  position: relative;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: $Sapphire;
+  background-color: $color-transparent;
+  margin: 0 22px 11px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 
-    &:first-child {
-        margin-left: 0;
-    }
-    &:last-child {
-        margin-right: 0;
-    }
-    
-    &.is-active::after {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: -11px;
-        left: 0;
-        background-color: #D10A42;
-        content: "";
+  &:first-child {
+    margin-left: 0;
+  }
 
-        @media (max-width: $tablet-width) {
-            bottom: -14px;
-        }
-    }
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.is-active::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -11px;
+    left: 0;
+    background-color: #d10a42;
+    content: "";
 
     @media (max-width: $tablet-width) {
-        font-size: 18px;
-        line-height: 27px;
-        margin: 0 26px 12px;
+      bottom: -14px;
     }
+  }
 
-    @media (max-width: $mobile-width) {
-        font-size: 16px;
-        line-height: 24px;
-        margin: 0 21px 15px;
-    }
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0 26px 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 21px 15px;
+  }
 }
 
 
 .passes__list {
-    display: flex;
-    gap: 42px;
-    padding: 0;
-    margin: 0;
-    z-index: 1;
+  display: flex;
+  gap: 42px;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
 
-    @media (max-width: $tablet-width) {
-        flex-direction: column;
-        gap: 40px;
-    }
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .passes__list-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 63px 76px 68px;
-    background-color: $color-default-white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 63px 76px 68px;
+  background-color: $color-default-white;
 
-    &:hover::after,
-    &:focus-within::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border: 7px solid #D10A42;
-        border-image-slice: 1;
-        border-image-source: $primary-grdient;
-        content: "";
-    }
+  &:hover::after,
+  &:focus-within::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 7px solid #d10a42;
+    border-image-slice: 1;
+    border-image-source: $primary-grdient;
+    content: "";
+  }
 
-    @media (max-width: $tablet-width) {
-        padding: 68px 115px 64px;
-    }
+  @media (max-width: $tablet-width) {
+    padding: 68px 115px 64px;
+  }
 
-    @media (max-width: $mobile-width) {
-        padding: 44px 42px 55px;
-    }
+  @media (max-width: $mobile-width) {
+    padding: 44px 42px 55px;
+  }
 }
 
 .passes__option-title {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 28.6px;
-    margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28.6px;
+  margin: 0 0 10px;
 
-    @media (max-width: $mobile-width) {
-        font-size: 22px;
-        line-height: 24px;
-    }
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .passes__price-wrapper {
-    position: relative;
-    padding-top: 66px;
-    padding-bottom: 34px;
+  position: relative;
+  padding-top: 66px;
+  padding-bottom: 34px;
 
-    @media (max-width: $mobile-width) {
-        padding-top: 55px;
-        padding-bottom: 29px;
-    }
+  @media (max-width: $mobile-width) {
+    padding-top: 55px;
+    padding-bottom: 29px;
+  }
 }
 
 .passes__price-shadow {
-    position: absolute;
-    top: 14px;
-    left: 0;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 150px;
-    color: #E8E8E8;
-    opacity: 0.47999998927116394;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48;
 
-    @media (max-width: $tablet-width) {
-        left: 41px;
-    }
+  @media (max-width: $tablet-width) {
+    left: 41px;
+  }
 
-    @media (max-width: $mobile-width) {
-        line-height: 120px;
-        font-size: 80px;
-        left: 21px;
-    }
+  @media (max-width: $mobile-width) {
+    line-height: 120px;
+    font-size: 80px;
+    left: 21px;
+  }
 }
 
 .passes__price {
-    position: inherit;
-    color: #103AAE;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 90px;
-    margin-right: 11px;
-    z-index: 1;
+  position: inherit;
+  color: #103aae;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  margin-right: 11px;
+  z-index: 1;
 
-    @media (max-width: $mobile-width) {
-        font-size: 48px;
-        line-height: 72px;
-        margin-right: 7px;
-    }
+  @media (max-width: $mobile-width) {
+    font-size: 48px;
+    line-height: 72px;
+    margin-right: 7px;
+  }
 }
 
 .passes__money-icon {
-    position: inherit;
+  position: inherit;
 
-    @media (max-width: $mobile-width) {
-        width: 24px;
-        height: 33px;
-    }
+  @media (max-width: $mobile-width) {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 .passes__button {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    color: $Sapphire;
-    width: 206px;
-    padding: 24px 44px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid $resolution-blue;
-    text-transform: uppercase;
-    cursor: pointer;
-    z-index: 1;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: $Sapphire;
+  width: 206px;
+  padding: 24px 44px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid $resolution-blue;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 1;
 
-    &:hover,
-    &:focus {
-        color: $color-default-white;
-        background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
-        border-color: $color-transparent;
-    }
+  &:hover,
+  &:focus {
+    color: $color-default-white;
+    background: var(--1, linear-gradient(151deg, #ed0233 0%, #003eb7 100%));
+    border-color: $color-transparent;
+  }
 }
 
 .passes__container-icon {
-    position: absolute;
-    bottom: -148px;
-    right: 0;
-    width: 287px; 
-    height: 494px; 
+  position: absolute;
+  bottom: -148px;
+  right: 0;
+  width: 287px;
+  height: 494px;
 
-    @media (max-width: $tablet-width) {
-        bottom: -124px;
-        width: 347px;
-        height: 444px;
-    }
+  @media (max-width: $tablet-width) {
+    bottom: -124px;
+    width: 347px;
+    height: 444px;
+  }
 
-    @media (max-width: $mobile-width) {
-        display: none;
-    }
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

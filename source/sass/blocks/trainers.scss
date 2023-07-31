@@ -1,206 +1,206 @@
 .trainers__content-wrapper {
-    position: relative;
-    max-width: 1366px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 120px 103px;
-    
-    @media (max-width: $tablet-width) {
-        padding: 108px 101px;
-    }
+  position: relative;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px 103px;
 
-    @media (max-width: $mobile-width) {
-        flex-direction: column;
-        padding: 63px 47px 70px;
-    }
+  @media (max-width: $tablet-width) {
+    padding: 108px 101px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    padding: 63px 47px 70px;
+  }
 }
 
 .trainers__title {
-    font-family: 'Alumni Sans', sans-serif;
-    font-size: 54px;
-    font-weight: 600;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+  margin: 5px 0 69px 4px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin: 5px 6px 45px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
     letter-spacing: 0.96px;
-    margin: 5px 0 69px 4px;
-
-    @media (max-width: $tablet-width) {
-        font-size: 42px;
-        letter-spacing: 1.26px;
-        text-align: center;
-        margin: 5px 6px 45px 0;
-    }
-
-    @media (max-width: $mobile-width) {
-        font-size: 32px;
-        letter-spacing: 0.96px;
-        margin-bottom: 51px;
-    }
+    margin-bottom: 51px;
+  }
 }
 
 .swiper {
-    position: relative;
+  position: relative;
 }
 
 .trainers__swiper-slide {
-    position: relative;
-    text-align: center;
-    font-size: 18px;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
 }
 
 .trainers .swiper-wrapper .trainers-image {
-    @media (max-width: $tablet-width) {
-        width: 268px;
-        height: 294px;
-    }
+  @media (max-width: $tablet-width) {
+    width: 268px;
+    height: 294px;
+  }
 }
 
 
 .trainers__description {
-    position: absolute;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
-    color: $color-default-white;
-    bottom: 23px;
-    left: 0;
-    right: 0;
-    text-align: center;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: $color-default-white;
+  bottom: 23px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .trainers__slide-name {
-    font-size: 18px;
-    line-height: 22px;
-    margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
 }
 
 .trainers__slide-profile {
-    display: none;
-    font-size: 16px;
-    font-weight: 400;
-    color: #B6BDCC;
-    margin-top: 0;
+  display: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #b6bdcc;
+  margin-top: 0;
 }
 
 .trainers__slide-list {
-    display: none;
-    text-align: left;
-    padding-left: 49px;
-    padding-right: 10px;
-    margin-top: 30px;
+  display: none;
+  text-align: left;
+  padding-left: 49px;
+  padding-right: 10px;
+  margin-top: 30px;
 }
 
 .trainers__slide-list-item {
-    position: relative;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    margin-bottom: 14px;
-    margin-left: 3px;
-    padding-left: 20px;
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  margin-left: 3px;
+  padding-left: 20px;
 
-    &::before {
-        position: absolute;
-        font-size: 33px;
-        left: 0;
-        content:"•";
-    }
+  &::before {
+    position: absolute;
+    font-size: 33px;
+    left: 0;
+    content: "•";
+  }
 }
 
 .trainers__swiper-slide:hover .trainers__description {
-    top: 0;
-    bottom: 0;
-    padding: 52px 0 0;
-    background-color: $resolution-blue;
-    opacity: 0.89;
+  top: 0;
+  bottom: 0;
+  padding: 52px 0 0;
+  background-color: $resolution-blue;
+  opacity: 0.89;
 }
 
 .trainers__swiper-slide:hover .trainers__slide-profile,
 .trainers__swiper-slide:hover .trainers__slide-list {
-    display: block;
+  display: block;
 }
 
 .swiper-button-prev {
-    z-index: 1;
+  z-index: 1;
 }
 
 .swiper-button-next {
-    z-index: 1;
+  z-index: 1;
 }
 
 .trainers__image {
-    width: 264px;   
-    height: 294px;
+  width: 264px;
+  height: 294px;
 
-    @media (max-width: $mobile-width) {
-        height: 274px;
-    }
+  @media (max-width: $mobile-width) {
+    height: 274px;
+  }
 }
 
-//buttons swiper 
+//buttons swiper
 
 .trainers__swiper-button-prev,
 .trainers__swiper-button-next {
-    background: none;
-    border: none;
-    position: absolute;
-    bottom: 245px;
-    transform: translateY(-50%);
-    font-size: 0;
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 245px;
+  transform: translateY(-50%);
+  font-size: 0;
 
-    @media (max-width: $tablet-width) {
-        bottom: 234px;
-    }
+  @media (max-width: $tablet-width) {
+    bottom: 234px;
+  }
 
-    @media (max-width: $mobile-width) {
-        bottom: 185px;
-    }
+  @media (max-width: $mobile-width) {
+    bottom: 185px;
+  }
 }
 
 .trainers__swiper-button-prev::after,
 .trainers__swiper-button-next::after {
-    content: '';
-    display: block;
-    width: 23px;
-    height: 23px;
-    border-top: 1px solid #AFAFAF;
-    border-right: 1px solid #AFAFAF;
-    transform-origin: center;
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  border-top: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
+  transform-origin: center;
 
-    @media (max-width: $mobile-width) {
-        width: 15px;
-        height: 15px;
-    }
+  @media (max-width: $mobile-width) {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .trainers__swiper-button-prev {
-    left: 50px;
+  left: 50px;
 
-    @media (max-width: $mobile-width) {
-        left: 18px;
-    }
+  @media (max-width: $mobile-width) {
+    left: 18px;
+  }
 }
 
 .trainers__swiper-button-prev::before {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .trainers__swiper-button-prev::after {
-    transform: rotate(226deg);
-    margin-top: -6px;
+  transform: rotate(226deg);
+  margin-top: -6px;
 }
 
 .trainers__swiper-button-next {
-    right: 50px;
+  right: 50px;
 
-    @media (max-width: $mobile-width) {
-        right: 18px;
-    }
+  @media (max-width: $mobile-width) {
+    right: 18px;
+  }
 }
 
 .trainers__swiper-button-next::before {
-    transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .trainers__swiper-button-next::after {
-    transform: rotate(45deg);
-    margin-top: 2px;
+  transform: rotate(45deg);
+  margin-top: 2px;
 }

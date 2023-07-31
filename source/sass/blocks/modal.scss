@@ -91,16 +91,6 @@
     }
   }
 
-  &--fit-content {
-    .modal__content {
-      width: auto;
-
-      @include vp-767 {
-        width: 100%;
-      }
-    }
-  }
-
   &--no-scale {
     transform: none;
   }
@@ -115,5 +105,15 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+}
+
+.modal--fit-content {
+  .modal__content {
+    width: auto;
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 }

@@ -2,7 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
-import {initAccordions} from './modules/accordion/init-accordion'
+import {initAccordions} from './modules/accordion/init-accordion';
+import Swiper from './vendor/swiper';
 
 // ---------------------------------
 
@@ -16,9 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-  const swiper = new Swiper('#swiper-trainers', {
+  const trainersSwiper = new Swiper('#swiper-trainers', {
     direction: 'horizontal',
-    autoHeight: true, 
+    autoHeight: true,
     loop: true,
     slidesPerView: 4,
     spaceBetween: 40,
@@ -31,42 +32,42 @@ window.addEventListener('DOMContentLoaded', () => {
       // when window width is >= 768px
       768: {
         slidesPerView: 2,
-        spaceBetween: 38
+        spaceBetween: 38,
       },
       1200: {
         slidesPerView: 4,
-        spaceBetween: 40
-      }
+        spaceBetween: 40,
+      },
     },
-  
+
     // Navigation arrows
     navigation: {
       nextEl: '.trainers__swiper-button-next',
       prevEl: '.trainers__swiper-button-prev',
     },
   });
-
-  //swiper-reviews
+  window.trainersSwiper = trainersSwiper;
+  // swiper-reviews
 
   const reviewsSwiper = new Swiper('#swiper-reviews', {
     direction: 'horizontal',
-    autoHeight: true, 
+    autoHeight: true,
     loop: true,
     slidesPerView: 1,
-  
+
     // Navigation arrows
     navigation: {
       nextEl: '.reviews__swiper-button-next',
       prevEl: '.reviews__swiper-button-prev',
     },
   });
+  window.reviewsSwiper = reviewsSwiper;
 
-  
-  var playButton = document.querySelector('.gym__play-button');
-  var video = document.querySelector('.gym__video');
-  var image = document.querySelector('.gym__video-image');
+  let playButton = document.querySelector('.gym__play-button');
+  let video = document.querySelector('.gym__video');
+  let image = document.querySelector('.gym__video-image');
 
-  playButton.addEventListener('click', function() {
+  playButton.addEventListener('click', function () {
 
     playButton.style.display = 'none';
     image.style.display = 'none';
@@ -78,16 +79,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    //init modals
+    // init modals
     initModals();
-    
-    //init tabs
+
+    // init tabs
     initTabs();
 
-    //init accordion
+    // init accordion
     initAccordions();
 
-    //init form
+    // init form
     const form = new Form();
     window.form = form;
     form.init();

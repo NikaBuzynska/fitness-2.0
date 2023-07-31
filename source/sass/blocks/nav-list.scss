@@ -1,76 +1,76 @@
 .nav-list {
-    display: flex;
-    flex-grow: 1;
-    font-family: "Roboto Condensed",sans-serif;
-    padding: 0;
-    margin: 0;
-    // margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  flex-grow: 1;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+  // margin-left: auto;
+  margin-right: auto;
 
-    @media (max-width: $mobile-width) {
-        display: block;
-        column-count: 2;
-    }
+  @media (max-width: $mobile-width) {
+    display: block;
+    column-count: 2;
+  }
 }
 
 .nav-list__item {
-    font-size: 14px;
+  font-size: 14px;
 
-    &:last-child {
-        margin-right: auto;
-    }
+  &:last-child {
+    margin-right: auto;
+  }
 
-    @media (max-width: $mobile-width) {
-        font-size: 16px;
-        padding-right: 60px;
-    }
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    padding-right: 60px;
+  }
 }
 
 .nav-list__item--logo {
-    margin-right: auto;
-    padding-left: 0;
-    padding-top: 49px;
-    padding-right: 60px;
+  margin-right: auto;
+  padding-left: 0;
+  padding-top: 49px;
+  padding-right: 60px;
 
-    @media (max-width: $tablet-width) {
-        padding-top: 44px;
-        padding-right: 26px;
-    }
+  @media (max-width: $tablet-width) {
+    padding-top: 44px;
+    padding-right: 26px;
+  }
 
-    @media (max-width: $mobile-width) {
-        padding-top: 8px;
-        padding-bottom: 7px;
-    }
+  @media (max-width: $mobile-width) {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
 }
 
 .nav-list__logo-text {
-    font-family: 'Alumni Sans', sans-serif;
-    color: $color-default-white;
-    font-size: 26px;
-    letter-spacing: 0.52px;
-    font-style: normal;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-family: "Alumni Sans", sans-serif;
+  color: $color-default-white;
+  font-size: 26px;
+  letter-spacing: 0.52px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
 
-    @media (max-width: $tablet-width) {
-        font-size: 24px;
-    }
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
 
-    @media (max-width: $mobile-width) {
-        font-size: 20px;
-    }
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+  }
 }
 
 .nav-list__link {
-    display: inline-block;
-    color: $color-default-white;
-    padding: 43px 20px 42px;
+  display: inline-block;
+  color: $color-default-white;
+  padding: 43px 20px 42px;
 
-    @media (max-width: $tablet-width) {
-        padding: 45px 15px;
-    }
+  @media (max-width: $tablet-width) {
+    padding: 45px 15px;
+  }
 
-    @media (max-width: $mobile-width) {
-        padding: 8px 0 7px;
-    }
+  @media (max-width: $mobile-width) {
+    padding: 8px 0 7px;
+  }
 }

@@ -6,10 +6,12 @@
   padding: 120px 103px;
 
   @media (max-width: $tablet-width) {
+    max-width: 678px;
     padding: 108px 101px;
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 320px;
     flex-direction: column;
     padding: 63px 47px 70px;
   }

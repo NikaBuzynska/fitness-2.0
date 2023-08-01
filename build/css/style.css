@@ -1739,6 +1739,7 @@ ul {
   font-weight: 600;
   letter-spacing: 0.78px;
   display: inline-block;
+  color: #ffffff;
   margin-top: 33px;
 }
 @media (max-width: 1199px) {
@@ -2050,19 +2051,19 @@ ul {
   }
 }
 
-.gym__image {
+.gym__picture-container img {
   width: 660px;
   height: 401px;
 }
 @media (max-width: 1199px) {
-  .gym__image {
+  .gym__picture-container img {
     width: 100%;
     height: 345px;
     margin-top: 44px;
   }
 }
 @media (max-width: 767px) {
-  .gym__image {
+  .gym__picture-container img {
     width: 100%;
     height: 313px;
     -o-object-fit: cover;
@@ -2097,7 +2098,7 @@ ul {
 }
 
 @media (max-width: 767px) {
-  .gym__video-image {
+  .gym__video-container > img {
     width: 320px;
     height: 167px;
     -o-object-fit: cover;
@@ -2444,7 +2445,7 @@ ul {
   border-color: rgba(255, 255, 255, 0);
 }
 
-.passes__container-icon {
+.passes__pictue-container img {
   position: absolute;
   bottom: -148px;
   right: 0;
@@ -2452,14 +2453,14 @@ ul {
   height: 494px;
 }
 @media (max-width: 1199px) {
-  .passes__container-icon {
+  .passes__pictue-container img {
     bottom: -124px;
     width: 347px;
     height: 444px;
   }
 }
 @media (max-width: 767px) {
-  .passes__container-icon {
+  .passes__pictue-container img {
     display: none;
   }
 }
@@ -2479,6 +2480,7 @@ ul {
 }
 @media (max-width: 1199px) {
   .promo__content-wrapper {
+    max-width: 678px;
     padding: 100px 45px 0;
   }
 }
@@ -2488,6 +2490,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 290px;
     padding: 76px 15px 0;
   }
 }
@@ -2500,12 +2503,14 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 500px;
   padding: 80px 76px 78px;
   background-color: #ed0233;
 }
 @media (max-width: 1199px) {
   .promo__text-wrapper {
     padding: 39px 45px;
+    max-width: 292px;
   }
 }
 @media (max-width: 767px) {
@@ -2638,18 +2643,18 @@ ul {
   }
 }
 
-.promo__image {
+.promo__content-wrapper img {
   width: 660px;
   height: 500px;
 }
 @media (max-width: 1199px) {
-  .promo__image {
+  .promo__content-wrapper img {
     width: 386px;
     height: 292px;
   }
 }
 @media (max-width: 767px) {
-  .promo__image {
+  .promo__content-wrapper img {
     width: 290px;
     height: 292px;
     -o-object-fit: cover;
@@ -2790,12 +2795,12 @@ ul {
   z-index: 1;
 }
 
-.trainers__image {
+.trainers__swiper-slide img {
   width: 264px;
   height: 294px;
 }
 @media (max-width: 767px) {
-  .trainers__image {
+  .trainers__swiper-slide img {
     height: 274px;
   }
 }
@@ -2820,7 +2825,7 @@ ul {
 @media (max-width: 767px) {
   .trainers__swiper-button-prev,
 .trainers__swiper-button-next {
-    bottom: 185px;
+    bottom: 192px;
   }
 }
 
@@ -2906,6 +2911,7 @@ ul {
 }
 @media (max-width: 767px) {
   .advantages__content-wrapper {
+    max-width: 320px;
     padding: 69px 0 17px;
   }
 }
@@ -3160,11 +3166,13 @@ ul {
 }
 @media (max-width: 1199px) {
   .deals__content-wrapper {
+    max-width: 768px;
     padding: 103px 45px 60px;
   }
 }
 @media (max-width: 767px) {
   .deals__content-wrapper {
+    max-width: 320px;
     padding: 68px 15px 31px;
   }
 }
@@ -3279,20 +3287,20 @@ ul {
   }
 }
 
-.deals__image {
+.deals__image-wrapper img {
   width: 280px;
   height: 462px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 1199px) {
-  .deals__image {
+  .deals__image-wrapper img {
     width: 399px;
     height: 462px;
   }
 }
 @media (max-width: 767px) {
-  .deals__image {
+  .deals__image-wrapper img {
     width: 290px;
     height: 299px;
     -o-object-fit: fill;
@@ -3642,11 +3650,13 @@ ul {
 }
 @media (max-width: 1199px) {
   .reviews__content-wrapper {
+    max-width: 768px;
     padding: 91px 103px 100px;
   }
 }
 @media (max-width: 767px) {
   .reviews__content-wrapper {
+    max-width: 320px;
     padding: 70px 47px 71px;
   }
 }
@@ -3691,7 +3701,12 @@ ul {
   }
 }
 
-.reviews__user-avatar {
+.reviews__picture {
+  width: 80px;
+  height: 80px;
+}
+
+.reviews__picture img {
   width: 80px;
   height: 80px;
   margin-right: 28px;
@@ -3699,12 +3714,17 @@ ul {
   border-radius: 50%;
 }
 @media (max-width: 767px) {
-  .reviews__user-avatar {
+  .reviews__picture img {
     position: absolute;
     left: 41px;
     width: 68px;
     height: 68px;
   }
+}
+
+.reviews__user-info {
+  max-width: 328px;
+  margin-left: auto;
 }
 
 .reviews__user-name {
@@ -3932,7 +3952,7 @@ ul {
   }
 }
 
-.appointment-field__form-input {
+.appointment-field__form input {
   font-size: 14px;
   width: 190px;
   padding: 3px 0 6px 0;
@@ -3941,12 +3961,12 @@ ul {
   border-bottom: 1px solid #74819c;
 }
 @media (max-width: 1199px) {
-  .appointment-field__form-input {
+  .appointment-field__form input {
     width: 204px;
   }
 }
 @media (max-width: 767px) {
-  .appointment-field__form-input {
+  .appointment-field__form input {
     width: 290px;
   }
 }

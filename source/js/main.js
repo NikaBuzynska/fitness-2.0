@@ -67,13 +67,19 @@ window.addEventListener('DOMContentLoaded', () => {
   let video = document.querySelector('.gym__video');
   let image = document.querySelector('.gym__video-image');
 
-  playButton.addEventListener('click', function () {
+  if (playButton) {
 
-    playButton.style.display = 'none';
-    image.style.display = 'none';
+    playButton.addEventListener('click', function () {
 
-    video.style.display = 'block';
-  });
+      playButton.style.display = 'none';
+
+      if (image && video) {
+        image.style.display = 'none';
+
+        video.style.display = 'block';
+      }
+    });
+  }
 
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

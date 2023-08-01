@@ -14,6 +14,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 320px;
     padding: 69px 0 17px;
   }
 }
@@ -50,6 +51,9 @@
 
   @media (max-width: $tablet-width) {
     min-width: auto;
+    // max-width: 669px;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 }
 

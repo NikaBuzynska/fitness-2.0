@@ -5,10 +5,12 @@
   padding: 135px 103px 117px;
 
   @media (max-width: $tablet-width) {
+    max-width: 768px;
     padding: 103px 45px 60px;
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 320px;
     padding: 68px 15px 31px;
   }
 }
@@ -102,7 +104,7 @@
   }
 }
 
-.deals__image {
+.deals__image-wrapper img {
   width: 280px;
   height: 462px;
   object-fit: cover;

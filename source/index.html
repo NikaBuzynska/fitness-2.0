@@ -15,10 +15,12 @@
     <header class="header">
       <div class="header__content-wrapper">
         <div class="header__upper-wrapper">
-          <a class="header__logo-link" href="tel:+788005555555">
+          <a class="header__logo-link" href="index.html">
             <span class="header__logo-text">supergym</span>
           </a>
-          <span class="header__tel"8-800-555-55-55></span>
+          <a class="header__tel-link" href="tel:+788005555555">
+            <span class="header__tel">8-800-555-55-55</span>
+          </a>
         </div>
         <div class="header__container">
           <div class="header__intro-wrapper">
@@ -32,7 +34,8 @@
             <a class="header__button" href="#">Купить абонемент</a>
           </div>
           <div class="header__image-wrapper">
-            <img class="header__image" src="img/header-picture.jpg" srcset="img/header-picture@2x.jpg" width="500" height="556" alt="Мужчина в футболке супермена">
+            <img class="header__image" src="img/header-picture.jpg" srcset="img/header-picture@2x.jpg" width="500"
+              height="556" alt="Мужчина в футболке супермена">
           </div>
         </div>
       </div>
@@ -50,9 +53,19 @@
               В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
               несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
-          <img class="gym__image" src="img/gym-image.jpg" srcset="img/gym-image@2x.jpg" width="660" height="401" alt="Тренажерный зал">
+          <div class="gym__picture-container">
+          <picture>
+            <source type="image/webp" srcset="img/gym-image.webp 1x, img/gym-image@2x.webp 2x">
+            <img class="gym__image" src="img/gym-image.jpg" srcset="img/gym-image@2x.jpg" width="660" height="401"
+              alt="Тренажерный зал">
+          </picture>
+        </div>
           <div class="gym__video-container">
-            <img class="gym__video-image" src="img/video-picture.jpg" srcset="img/video-picture@2x.jpg" width="364" height="228" alt="">
+            <picture>
+              <source type="image/webp" srcset="img/video-picture.webp 1x, img/video-picture@2x.webp 2x">
+              <img class="gym__video-image" src="img/video-picture.jpg" srcset="img/video-picture@2x.jpg" width="364"
+                height="228" alt="">
+            </picture>
             <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -190,11 +203,16 @@
                 </li>
               </ul>
             </div>
-            <picture>
-              <source media="(max-width: 1199px)" srcset="img/freeweights.png">
-              <img class="passes__container-icon" src="img/freeweights-desk.png" srcset="img/freeweights-desk@2x.png"
-              width="321" height="384" alt="блины">
-            </picture>
+            <div class="passes__pictue-container">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/freeweights.webp">
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/freeweights-disk.webp 1x, img/freeweights-disk@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/freeweights.png">
+                <img class="passes__container-icon" src="img/freeweights-disk.png" srcset="img/freeweights-disk@2x.png"
+                  width="321" height="384" alt="блины">
+              </picture>
+            </div>
           </div>
         </div>
       </section>
@@ -218,7 +236,11 @@
             <span class="promo__description">Ежегодные соревнования по CrossFit</span>
             <button class="promo__button">заполнить&nbsp;заявку</button>
           </div>
-          <img class="promo__image" src="img/promo-pic.jpg" srcset="img/promo-pic@2x.jpg" width="660" height="500" alt="Мужчина топлес">
+          <picture>
+            <source type="image/webp" srcset="img/promo-pic.webp 1x, img/promo-pic@2x.webp 2x">
+            <img class="promo__image" src="img/promo-pic.jpg" srcset="img/promo-pic@2x.jpg" width="660" height="500"
+              alt="Мужчина топлес">
+          </picture>
         </div>
       </section>
       <section class="trainers">
@@ -237,7 +259,11 @@
                     <li class="trainers__slide-list-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img class="trainers__image" src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg" width="260" height="294" alt="tr1">
+                <picture>
+                  <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
+                  <img class="trainers__image" src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg" width="260"
+                    height="294" alt="tr1">
+                </picture>
               </div>
               <div class="trainers__swiper-slide swiper-slide">
                 <div class="trainers__description">
@@ -249,7 +275,11 @@
                     <li class="trainers__slide-list-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img class="trainers__image" src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg" width="260" height="294" alt="tr1">
+                <picture>
+                  <source type="image/webp" srcset="img/trainer-2.webp 1x, img/trainer-2@2x.webp 2x">
+                  <img class="trainers__image" src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg" width="260"
+                    height="294" alt="tr1">
+                </picture>
               </div>
               <div class="trainers__swiper-slide swiper-slide">
                 <div class="trainers__description">
@@ -261,7 +291,11 @@
                     <li class="trainers__slide-list-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img class="trainers__image" src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg" width="260" height="294" alt="tr1">
+                <picture>
+                  <source type="image/webp" srcset="img/trainer-3.webp 1x, img/trainer-3@2x.webp 2x">
+                  <img class="trainers__image" src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg" width="260"
+                    height="294" alt="tr1">
+                </picture>
               </div>
               <div class="trainers__swiper-slide swiper-slide">
                 <div class="trainers__description">
@@ -273,7 +307,11 @@
                     <li class="trainers__slide-list-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img class="trainers__image" src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg" width="260" height="294" alt="tr1">
+                <picture>
+                  <source type="image/webp" srcset="img/trainer-4.webp 1x, img/trainer-4@2x.webp 2x">
+                  <img class="trainers__image" src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg" width="260"
+                    height="294" alt="tr1">
+                </picture>
               </div>
               <div class="trainers__swiper-slide swiper-slide">
                 <div class="trainers__description">
@@ -285,7 +323,11 @@
                     <li class="trainers__slide-list-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img class="trainers__image" src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg" width="260" height="294" alt="tr1">
+                <picture>
+                  <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
+                  <img class="trainers__image" src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg" width="260"
+                    height="294" alt="tr1">
+                </picture>
               </div>
               <div class="trainers__swiper-slide swiper-slide">
                 <div class="trainers__description">
@@ -297,7 +339,11 @@
                     <li class="trainers__slide-list-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img class="trainers__image" src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg" width="260" height="294" alt="tr1">
+                <picture>
+                  <source type="image/webp" srcset="img/trainer-2.webp 1x, img/trainer-2@2x.webp 2x">
+                  <img class="trainers__image" src="img/trainer-2.jpg" srcset="img/trainer-2@2x.jpg" width="260"
+                    height="294" alt="tr1">
+                </picture>
               </div>
               <div class="trainers__swiper-slide swiper-slide">
                 <div class="trainers__description">
@@ -309,7 +355,11 @@
                     <li class="trainers__slide-list-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img class="trainers__image" src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg" width="260" height="294" alt="tr1">
+                <picture>
+                  <source type="image/webp" srcset="img/trainer-3.webp 1x, img/trainer-3@2x.webp 2x">
+                  <img class="trainers__image" src="img/trainer-3.jpg" srcset="img/trainer-3@2x.jpg" width="260"
+                    height="294" alt="tr1">
+                </picture>
               </div>
               <div class="trainers__swiper-slide swiper-slide">
                 <div class="trainers__description">
@@ -321,7 +371,11 @@
                     <li class="trainers__slide-list-item">Опыт — 6 лет</li>
                   </ul>
                 </div>
-                <img class="trainers__image" src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg" width="260" height="294" alt="tr1">
+                <picture>
+                  <source type="image/webp" srcset="img/trainer-4.webp 1x, img/trainer-4@2x.webp 2x">
+                  <img class="trainers__image" src="img/trainer-4.jpg" srcset="img/trainer-4@2x.jpg" width="260"
+                    height="294" alt="tr1">
+                </picture>
               </div>
             </div>
           </div>
@@ -399,8 +453,11 @@
                 <a class="deals__bigger-banner-button" href="#">подробнее</a>
               </div>
               <div class="deals__image-wrapper">
-                <img class="deals__image" src="img/deals-image.jpg" srcset="img/deals-image@2x.jpg"
-                width="280" height="462" alt="Спортивная девушка">
+                <picture>
+                  <source type="image/webp" srcset="img/deals-image.webp 1x, img/deals-image@2x.webp 2x">
+                  <img class="deals__image" src="img/deals-image.jpg" srcset="img/deals-image@2x.jpg" width="280"
+                    height="462" alt="Спортивная девушка">
+                </picture>
               </div>
             </div>
             <ul class="deals__list">
@@ -421,7 +478,7 @@
       <section class="faq">
         <div class="faq__content-wrapper">
           <h2 class="faq__title" id="tablist-1">Вопросы и ответы</h2>
-          <div class="faq__tabs tabs" data-tabs="parent">
+          <div class="faq__tabs" data-tabs="parent">
             <div class="faq__tabs-list" data-tabs="controls" role="tablist" aria-labelledby="tablist-1">
               <button class="faq__tabs-button" id="tab-1" type="button" data-tabs="control" role="tab"
                 aria-selected="true" aria-controls="tabpanel-1">
@@ -440,7 +497,7 @@
                 <span class="faq__tabs-button-name">Правила</span>
               </button>
             </div>
-            <div class="faq__tabs-content-container tabs__content" data-tabs="content">
+            <div class="faq__tabs-content-container" data-tabs="content">
               <div class="faq__tabs-content-wrapper" id="tabpanel-1" data-tabs="element" role="tabpanel" tabindex="0"
                 aria-labelledby="tab-1">
                 <div class="faq__accordion accordion" data-accordion="parent" data-single="data-single">
@@ -690,8 +747,13 @@
           <div class="reviews__swiper swiper" id="swiper-reviews">
             <div class="swiper-wrapper reviews__swiper-wrapper">
               <div class="reviews__swiper-slide swiper-slide">
-                <img class="reviews__user-avatar" src="img/reviewer-avatar.png" srcset="img/reviewer-avatar@2x.png"
-                width="80" height="80" alt="пользователь">
+                <div class="reviews__picture">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviewer-avatar.webp 1x, img/reviewer-avatar@2x.webp 2x">
+                    <img class="reviews__user-avatar" src="img/reviewer-avatar.png" srcset="img/reviewer-avatar@2x.png"
+                      width="80" height="80" alt="пользователь">
+                  </picture>
+                </div>
                 <div class="reviews__user-info">
                   <h3 class="reviews__user-name">Анна Орлова</h3>
                   <p class="reviews__user-review">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
@@ -700,8 +762,13 @@
                 </div>
               </div>
               <div class="reviews__swiper-slide swiper-slide">
-                <img class="reviews__user-avatar" src="img/reviewer-avatar.png" srcset="img/reviewer-avatar@2x.png"
-                width="80" height="80" alt="пользователь">
+                <div class="reviews__picture">
+                  <picture>
+                    <source type="image/webp" srcset="img/reviewer-avatar.webp 1x, img/reviewer-avatar@2x.webp 2x">
+                    <img class="reviews__user-avatar" src="img/reviewer-avatar.png" srcset="img/reviewer-avatar@2x.png"
+                      width="80" height="80" alt="пользователь">
+                  </picture>
+                </div>
                 <div class="reviews__user-info">
                   <h3 class="reviews__user-name">Никита Максимов</h3>
                   <p class="reviews__user-review">«Хожу в Supergym уже больше трех лет. В клубе всегда чисто,
@@ -710,8 +777,13 @@
                 </div>
               </div>
               <div class="reviews__swiper-slide swiper-slide">
-                <img class="reviews__user-avatar" src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg"
-                width="80" height="80" alt="пользователь">
+                <div class="reviews__picture">
+                  <picture>
+                    <source type="image/webp" srcset="img/trainer-1.webp 1x, img/trainer-1@2x.webp 2x">
+                    <img class="reviews__user-avatar" src="img/trainer-1.jpg" srcset="img/trainer-1@2x.jpg" width="80"
+                      height="80" alt="пользователь">
+                  </picture>
+                </div>
                 <div class="reviews__user-info">
                   <h3 class="reviews__user-name">Джоана Меладзе</h3>
                   <p class="reviews__user-review">«Supergym мой любимый тренажерный зал. Занимаюсь с Сашей по

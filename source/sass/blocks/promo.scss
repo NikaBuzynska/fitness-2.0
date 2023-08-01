@@ -10,11 +10,13 @@
   padding: 120px 103px 0;
 
   @media (max-width: $tablet-width) {
+    max-width: 678px;
     padding: 100px 45px 0;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
+    max-width: 290px;
     padding: 76px 15px 0;
   }
 }
@@ -22,11 +24,13 @@
 .promo__text-wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
   padding: 80px 76px 78px;
   background-color: #ed0233;
 
   @media (max-width: $tablet-width) {
     padding: 39px 45px;
+    max-width: 292px;
   }
 
   @media (max-width: $mobile-width) {
@@ -147,7 +151,7 @@
   }
 }
 
-.promo__image {
+.promo__content-wrapper img {
   width: 660px;
   height: 500px;
 

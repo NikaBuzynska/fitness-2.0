@@ -10,10 +10,12 @@
   padding: 120px 402px;
 
   @media (max-width: $tablet-width) {
+    max-width: 768px;
     padding: 91px 103px 100px;
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 320px;
     padding: 70px 47px 71px;
   }
 }
@@ -54,7 +56,12 @@
   }
 }
 
-.reviews__user-avatar {
+.reviews__picture {
+  width: 80px;
+  height: 80px;
+}
+
+.reviews__picture img {
   width: 80px;
   height: 80px;
   margin-right: 28px;
@@ -67,6 +74,11 @@
     width: 68px;
     height: 68px;
   }
+}
+
+.reviews__user-info {
+  max-width: 328px;
+  margin-left: auto;
 }
 
 .reviews__user-name {
@@ -83,6 +95,7 @@
 .reviews__user-review {
   line-height: 22.4px;
   margin: 0;
+  // max-width: 328px;
 
   @media (max-width: $mobile-width) {
     text-align: center;

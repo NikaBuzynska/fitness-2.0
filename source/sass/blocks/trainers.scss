@@ -6,7 +6,7 @@
   padding: 120px 103px;
 
   @media (max-width: $tablet-width) {
-    max-width: 678px;
+    max-width: 804px;
     padding: 108px 101px;
   }
 
@@ -28,7 +28,7 @@
     font-size: 42px;
     letter-spacing: 1.26px;
     text-align: center;
-    margin: 5px 6px 45px 0;
+    margin: 5px 0 45px 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -49,6 +49,8 @@
 }
 
 .trainers .swiper-wrapper .trainers-image {
+  background-color: rgba(16, 38, 84, 0.5);
+
   @media (max-width: $tablet-width) {
     width: 268px;
     height: 294px;
@@ -147,6 +149,7 @@
   bottom: 245px;
   transform: translateY(-50%);
   font-size: 0;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     bottom: 234px;

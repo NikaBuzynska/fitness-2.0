@@ -60,7 +60,6 @@
     letter-spacing: 1.26px;
     margin-top: 13px;
     margin-bottom: 12px;
-    margin-right: 15px;
   }
 
   @media (max-width: $mobile-width) {
@@ -95,7 +94,7 @@
 
   @media (max-width: $tablet-width) {
     display: inline-block;
-    width: 502px;
+    width: 504px;
   }
 
   @media (max-width: $mobile-width) {
@@ -114,12 +113,12 @@
 .gym__picture-container img {
   width: 660px;
   height: 401px;
+  background-color: $Sapphire;
 
   @media (max-width: $tablet-width) {
     width: 678px;
     height: 345px;
     margin-top: 44px;
-    // margin-right: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -155,6 +154,7 @@
 }
 
 .gym__video-container img {
+  background-color: $Sapphire;
   @media (max-width: $mobile-width) {
     width: 320px;
     height: 167px;
@@ -166,6 +166,7 @@
   display: none;
   bottom: 120px;
   left: 540px;
+  background-color: $Sapphire;
 
   @media (max-width: $tablet-width) {
     width: 266px;

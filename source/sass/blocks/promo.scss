@@ -10,14 +10,14 @@
   padding: 120px 103px 0;
 
   @media (max-width: $tablet-width) {
-    max-width: 678px;
+    max-width: 804px;
     padding: 100px 45px 0;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     max-width: 290px;
-    padding: 76px 15px 0;
+    padding: 76px 0 0;
   }
 }
 
@@ -35,6 +35,7 @@
 
   @media (max-width: $mobile-width) {
     padding: 39px 45px 49px;
+    max-width: none;
   }
 }
 
@@ -154,6 +155,7 @@
 .promo__content-wrapper img {
   width: 660px;
   height: 500px;
+  background-color: rgba(16, 38, 84, 0.89);
 
   @media (max-width: $tablet-width) {
     width: 386px;

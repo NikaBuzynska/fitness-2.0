@@ -20,7 +20,7 @@
 .header__upper-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 103px 0;
+  padding: 34px 103px 5px;
 
   @media (max-width: $tablet-width) {
     padding: 0 45px;
@@ -33,15 +33,28 @@
 
 .header__logo-link {
   display: inline-block;
-  margin-top: 40px;
+  padding-top: 7px;
 
   @media (max-width: $tablet-width) {
     margin-top: 38px;
+    padding-top: 2px;
   }
 
   @media (max-width: $mobile-width) {
     margin-top: 0;
-    padding-top: 15px;
+    padding-top: 21px;
+  }
+}
+
+.header__logo-link img {
+  @media (max-width: $tablet-width) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 69px;
+    height: 13px;
   }
 }
 
@@ -71,7 +84,6 @@
   letter-spacing: 0.78px;
   display: inline-block;
   color: $color-default-white;
-  margin-top: 33px;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
@@ -186,7 +198,7 @@
   letter-spacing: 0.6px;
   color: #ffffff;
   padding: 19px 54px;
-  border: 4px solid #ffffff;
+  border: 4px solid $color-default-white;
   text-transform: uppercase;
 
   @media (max-width: $tablet-width) {
@@ -199,6 +211,16 @@
     text-align: center;
     padding: 17px 29px;
   }
+}
+
+.header__button:hover,
+.header__button:focus {
+  color: #103aae;
+  background-color: $color-default-white;
+}
+
+.header__button:disabled {
+  opacity: 0.5;
 }
 
 .header__image-wrapper {
@@ -218,6 +240,7 @@
   width: 500px;
   height: 556px;
   flex-shrink: 0;
+  background-color: #003d85;
 
   @media (max-width: $tablet-width) {
     width: 324px;

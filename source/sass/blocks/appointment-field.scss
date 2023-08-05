@@ -17,6 +17,13 @@
 .appointment-field__form {
   display: flex;
   flex-direction: column;
+  max-width: 417px;
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: 472px;
+    margin-left: 0;
+  }
 }
 
 .appointment-field__form-title {
@@ -81,6 +88,7 @@
   font-size: 14px;
   width: 190px;
   padding: 3px 0 6px 0;
+  color: $color-default-white;
   background-color: $Sapphire;
   border: none;
   border-bottom: 1px solid $light-slate-grey;
@@ -94,8 +102,15 @@
   }
 }
 
-.appointment-field__form-input::placeholder {
+.appointment-field__form input::placeholder {
   color: $color-default-white;
+}
+
+.appointment-field__form input:focus,
+.appointment-field__form input:active {
+  &::placeholder {
+    color: $color-transparent;
+  }
 }
 
 .appointment-field__form-button {
@@ -109,6 +124,7 @@
   color: $color-default-white;
   background-color: $Sapphire;
   border: 3px solid $color-default-white;
+  cursor: pointer;
 
   @media (max-width: $mobile-width) {
     padding-left: 0;

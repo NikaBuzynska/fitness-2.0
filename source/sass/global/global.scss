@@ -7,8 +7,16 @@ body {
   display: flex;
   flex-direction: column;
   color: $Sapphire;
+  overflow-x: hidden;
 }
 
 ul {
   list-style: none;
+}
+
+button {
+  user-select: none; /* Отключает выделение текста */
+  -webkit-user-select: none; /* Для Safari и Chrome */
+  -moz-user-select: none; /* Для Firefox */
+  -ms-user-select: none;
 }

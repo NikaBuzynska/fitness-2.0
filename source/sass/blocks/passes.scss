@@ -32,7 +32,6 @@
     letter-spacing: 1.26px;
     margin-top: 13px;
     margin-bottom: 32px;
-    margin-right: 13px;
   }
 
   @media (max-width: $mobile-width) {
@@ -176,6 +175,9 @@
 
 .passes__price-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 66px;
   padding-bottom: 34px;
 
@@ -188,21 +190,17 @@
 .passes__price-shadow {
   position: absolute;
   top: 14px;
-  left: 0;
+  left: 50%;
+  transform: translate(-51%, 0);
   font-size: 100px;
   font-weight: 700;
   line-height: 150px;
   color: #e8e8e8;
   opacity: 0.48;
 
-  @media (max-width: $tablet-width) {
-    left: 41px;
-  }
-
   @media (max-width: $mobile-width) {
     line-height: 120px;
     font-size: 80px;
-    left: 21px;
   }
 }
 

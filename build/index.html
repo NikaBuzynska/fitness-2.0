@@ -8,6 +8,14 @@
   <meta name="description" content="Описание проекта">
   <title>fitness-2.0</title>
   <link rel="icon" href="img/favicon.png">
+  <link rel="preload" href="./fonts/alumni-sans-v16-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/alumni-sans-v16-cyrillic_latin-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-300.woff2" as="font" type="font/woff2"
+    crossorigin>
+  <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" as="font" type="font/woff2"
+    crossorigin>
+  <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" as="font" type="font/woff2"
+    crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,7 +25,14 @@
       <div class="header__content-wrapper">
         <div class="header__upper-wrapper">
           <a class="header__logo-link" href="index.html">
-            <span class="header__logo-text">supergym</span>
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/SUPERGYM-mobile.png 1x, img/SUPERGYM-mobile@2x.webp 2x">
+              <source srcset="img/SUPERGYM-desktop.webp 1x, img/SUPERGYM-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/SUPERGYM-mobile.png 1x, img/SUPERGYM-mobile@2x.png 2x">
+              <img src="img/SUPERGYM-desktop.png" srcset="img/SUPERGYM-desktop@2x.png" width="122" height="44"
+                alt="лого">
+            </picture>
           </a>
           <a class="header__tel-link" href="tel:+788005555555">
             <span class="header__tel">8-800-555-55-55</span>
@@ -25,18 +40,21 @@
         </div>
         <div class="header__container">
           <div class="header__intro-wrapper">
-            <h2 class="header__small-title">Омск</h2>
+            <h2 class="header__small-title">омск</h2>
             <ul class="header__desctiption-list">
               <li class="header__desctiption-item">Тренажёрный зал</li>
               <li class="header__desctiption-item">Групповые занятия</li>
               <li class="header__desctiption-item">Кардио-зона</li>
             </ul>
             <h3 class="header__title">Фитнес центр</h3>
-            <a class="header__button" href="#">Купить абонемент</a>
+            <a class="header__button" id="buyPassButton" href="#">Купить абонемент</a>
           </div>
           <div class="header__image-wrapper">
-            <img class="header__image" src="img/header-picture.jpg" srcset="img/header-picture@2x.jpg" width="500"
-              height="556" alt="Мужчина в футболке супермена">
+            <picture>
+              <source type="image/webp" srcset="img/header-picture.webp 1x, img/header-picture@2x.webp 2x">
+              <img class="header__image" src="img/header-picture.jpg" srcset="img/header-picture@2x.jpg" width="500"
+                height="556" alt="Мужчина в футболке супермена">
+            </picture>
           </div>
         </div>
       </div>
@@ -47,20 +65,22 @@
           <div class="gym__text-wrapper">
             <h2 class="gym__title">Тренажерный зал</h2>
             <span class="gym__subtitle">Просторный зал площадью 900 кв/м</span>
-            <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
-              тела и здоровья. Тренажерный
+            <p class="gym__description">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное
+              место для укрепления
+              тела и&nbsp;здоровья. Тренажерный
               зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
             <p class="gym__description gym__description--second">
-              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+              В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              в&nbsp;фитнес центре есть
               несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
           <div class="gym__picture-container">
-          <picture>
-            <source type="image/webp" srcset="img/gym-image.webp 1x, img/gym-image@2x.webp 2x">
-            <img class="gym__image" src="img/gym-image.jpg" srcset="img/gym-image@2x.jpg" width="660" height="401"
-              alt="Тренажерный зал">
-          </picture>
-        </div>
+            <picture>
+              <source type="image/webp" srcset="img/gym-image.webp 1x, img/gym-image@2x.webp 2x">
+              <img class="gym__image" src="img/gym-image.jpg" srcset="img/gym-image@2x.jpg" width="660" height="401"
+                alt="Тренажерный зал">
+            </picture>
+          </div>
           <div class="gym__video-container">
             <picture>
               <source type="image/webp" srcset="img/video-picture.webp 1x, img/video-picture@2x.webp 2x">
@@ -79,7 +99,7 @@
           </div>
         </div>
       </section>
-      <section class="passes">
+      <section class="passes" id="passesBlock">
         <div class="passes__content-wrapper">
           <h2 class="passes__title">Абонементы</h2>
           <div data-tabs="parent">
@@ -244,7 +264,7 @@
           </picture>
         </div>
       </section>
-      <section class="trainers">
+      <section class="trainers" id="trainersBlock">
         <div class="trainers__content-wrapper">
           <h2 class="trainers__title">Тренеры</h2>
           <div class="swiper" id="swiper-trainers">
@@ -395,7 +415,7 @@
               </div>
               <div class="advantages__text-wrapper">
                 <h3 class="advantages__item-title">Площадь</h3>
-                <p class="advantages__item-description">Занимайтесь без очередей и толпучки</p>
+                <p class="advantages__item-description">Занимайтесь без очередей и&nbsp;толпучки</p>
               </div>
             </li>
             <li class="advantages__list-item">
@@ -405,7 +425,8 @@
               </div>
               <div class="advantages__text-wrapper">
                 <h3 class="advantages__item-title">Собственная парковка</h3>
-                <p class="advantages__item-description">Вы всегда найдете место для своей машины на нашей парковке</p>
+                <p class="advantages__item-description">Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей
+                  парковке</p>
               </div>
             </li>
             <li class="advantages__list-item advantages__list-item--center">
@@ -414,8 +435,8 @@
                 <span class="advantages__text advantages__text--center">Тренажеров</span>
               </div>
               <div class="advantages__text-wrapper advantages__text-wrapper--center">
-                <p class="advantages__item-description advantages__item-description--center">Современные тренажеры на
-                  все группы мышц</p>
+                <p class="advantages__item-description advantages__item-description--center">Современные тренажеры
+                  на&nbsp;все группы мышц.</p>
               </div>
             </li>
             <li class="advantages__list-item">
@@ -436,7 +457,7 @@
               </div>
               <div class="advantages__text-wrapper">
                 <h3 class="advantages__item-title">Тренерский опыт</h3>
-                <p class="advantages__item-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                <p class="advantages__item-description">Добивайтесь своих целей&nbsp;быстрее с&nbsp;профессиональным тренером</p>
               </div>
             </li>
           </ul>
@@ -469,7 +490,7 @@
               </li>
               <li class="deals__list-item">
                 <h3 class="deals__item-title">Скидка 20%</h3>
-                <p class="deals__item-info">Корпоративный фитнес с командой</p>
+                <p class="deals__item-info">Корпоративный фитнес с&nbsp;командой</p>
                 <a class="deals__item-button" href="#">подробнее</a>
               </li>
             </ul>
@@ -481,11 +502,11 @@
           <h2 class="faq__title" id="tablist-1">Вопросы и ответы</h2>
           <div class="faq__tabs" data-tabs="parent">
             <div class="faq__tabs-list" data-tabs="controls" role="tablist" aria-labelledby="tablist-1">
-              <button class="faq__tabs-button" id="tab-1" type="button" data-tabs="control" role="tab"
+              <button class="faq__tabs-button is-active" id="tab-1" type="button" data-tabs="control" role="tab"
                 aria-selected="true" aria-controls="tabpanel-1">
                 <span class="faq__tabs-button-name">Центр</span>
               </button>
-              <button class="faq__tabs-button is-active" id="tab-2" type="button" data-tabs="control" role="tab"
+              <button class="faq__tabs-button" id="tab-2" type="button" data-tabs="control" role="tab"
                 aria-selected="false" aria-controls="tabpanel-2">
                 <span class="faq__tabs-button-name">Абонемент</span>
               </button>
@@ -499,10 +520,10 @@
               </button>
             </div>
             <div class="faq__tabs-content-container" data-tabs="content">
-              <div class="faq__tabs-content-wrapper" id="tabpanel-1" data-tabs="element" role="tabpanel" tabindex="0"
+              <div class="faq__tabs-content-wrapper" id="tabpanel-1" data-tabs="element" role="tabpanel"
                 aria-labelledby="tab-1">
-                <div class="faq__accordion accordion" data-accordion="parent" data-single="data-single">
-                  <div class="faq__accordion-element accordion__element is-active" data-accordion="element">
+                <div class="faq__accordion accordion" data-accordion="parent">
+                  <div class="faq__accordion-element accordion__element" data-accordion="element">
                     <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
                       data-accordion="button">Как стать членом фитнес-центра?
                       <span class="faq__accordion-button-circle"></span>
@@ -556,10 +577,10 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__tabs-content-wrapper" id="tabpanel-2" data-tabs="element" role="tabpanel" tabindex="0"
+              <div class="faq__tabs-content-wrapper" id="tabpanel-2" data-tabs="element" role="tabpanel"
                 aria-labelledby="tab-2">
                 <div class="faq__accordion accordion" data-accordion="parent" data-single="data-single">
-                  <div class="faq__accordion-element accordion__element is-active" data-accordion="element">
+                  <div class="faq__accordion-element accordion__element" data-accordion="element">
                     <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
                       data-accordion="button">Занятия с
                       тренером входят в абонемент?
@@ -618,13 +639,13 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__tabs-content-wrapper" id="tabpanel-3" data-tabs="element" role="tabpanel" tabindex="0"
+              <div class="faq__tabs-content-wrapper" id="tabpanel-3" data-tabs="element" role="tabpanel"
                 aria-labelledby="tab-3">
                 <div class="faq__accordion accordion" data-accordion="parent" data-single="data-single">
-                  <div class="faq__accordion-element accordion__element is-active" data-accordion="element">
+                  <div class="faq__accordion-element accordion__element" data-accordion="element">
                     <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
                       data-accordion="button">Предлагает ли клуб услуги
-                      по консультированию<br>по вопросам питания?
+                      по&nbsp;консультированию<br>по вопросам питания?
                       <span class="faq__accordion-button-circle"></span>
                     </button>
                     <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -637,8 +658,7 @@
                   </div>
                   <div class="faq__accordion-element accordion__element" data-accordion="element">
                     <button class="faq__accordion-button accordion__button accordion__button btn btn--aquamarine"
-                      type="button" data-accordion="button">Проводятся ли в клубе какие-либо мероприятия или
-                      соревнования?
+                      type="button" data-accordion="button">Проводятся ли в клубе<br>какие-либо&nbsp;мероприятия или&nbsp;соревнования?
                       <span class="faq__accordion-button-circle"></span>
                     </button>
                     <div class="faq__accordion-content accordion__content" data-accordion="content">
@@ -677,10 +697,10 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__tabs-content-wrapper" id="tabpanel-4" data-tabs="element" role="tabpanel" tabindex="0"
+              <div class="faq__tabs-content-wrapper" id="tabpanel-4" data-tabs="element" role="tabpanel"
                 aria-labelledby="tab-4">
                 <div class="faq__accordion accordion" data-accordion="parent" data-single="data-single">
-                  <div class="accordion__element is-active" data-accordion="element">
+                  <div class="accordion__element" data-accordion="element">
                     <button class="faq__accordion-button accordion__button btn btn--aquamarine" type="button"
                       data-accordion="button">Есть в фитнес-центре дресс-код?
                       <span class="faq__accordion-button-circle"></span>
@@ -757,7 +777,7 @@
                 </div>
                 <div class="reviews__user-info">
                   <h3 class="reviews__user-name">Анна Орлова</h3>
-                  <p class="reviews__user-review">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                  <p class="reviews__user-review">«Хожу в Supergym уже больше года. Нравится, что&nbsp;в клубе всегда чисто,
                     тренажеры обновляют, персонал
                     дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
@@ -810,7 +830,7 @@
                 </label>
                 <label class="appointment-field__form-label">
                   <span class="appointment-field__form-input-title visually-hidden">Телефон</span>
-                  <input type="tel" name="tel" placeholder="Телефон">
+                  <input type="tel" id="phoneInput" name="tel" placeholder="Телефон">
                 </label>
               </div>
               <button class="appointment-field__form-button" type="submit">отправить</button>
@@ -818,29 +838,31 @@
           </form>
         </div>
         <div class="contacts">
-          <h3 class="contacts__title">Контакты</h3>
-          <ul class="contacts__list">
-            <li class="contacts__list-item">
-              <h4 class="contacts__list-item-title">Адрес:</h4>
-              <p class="contacts__list-item-description">г. Омск, ул. 60 лет Октября, 7</p>
-            </li>
-            <li class="contacts__list-item">
-              <h4 class="contacts__list-item-title">График работы:</h4>
-              <p class="contacts__list-item-description">Пн-Вс: с 8:00 до 22:00</p>
-            </li>
-            <li class="contacts__list-item">
-              <h4 class="contacts__list-item-title">Телефон:</h4>
-              <p class="contacts__list-item-description">
-                <a class="contacts__list-item-tel" href="tel:+788005555555">8-800-555-55-55</a>
-              </p>
-            </li>
-            <li class="contacts__list-item">
-              <h4 class="contacts__list-item-title">Email:</h4>
-              <p class="contacts__list-item-description">
-                <a class="contacts__list-item-email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-              </p>
-            </li>
-          </ul>
+          <div class="contacts__content-wrapper">
+            <h3 class="contacts__title">Контакты</h3>
+            <ul class="contacts__list">
+              <li class="contacts__list-item">
+                <h4 class="contacts__list-item-title">Адрес:</h4>
+                <p class="contacts__list-item-description">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contacts__list-item">
+                <h4 class="contacts__list-item-title">График работы:</h4>
+                <p class="contacts__list-item-description">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts__list-item">
+                <h4 class="contacts__list-item-title">Телефон:</h4>
+                <p class="contacts__list-item-description">
+                  <a class="contacts__list-item-tel" href="tel:+788005555555">8-800-555-55-55</a>
+                </p>
+              </li>
+              <li class="contacts__list-item">
+                <h4 class="contacts__list-item-title">Email:</h4>
+                <p class="contacts__list-item-description">
+                  <a class="contacts__list-item-email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -850,7 +872,11 @@
           <ul class="nav-list">
             <li class="nav-list__item nav-list__item--logo">
               <a class="nav-list__logo-link" href="#">
-                <span class="nav-list__logo-text">supergym</span>
+                <picture>
+                  <source srcset="img/SUPERGYM-desktop.webp 1x, img/SUPERGYM-desktop@2x.webp 2x">
+                  <img src="img/SUPERGYM-desktop.png" srcset="img/SUPERGYM-desktop@2x.png" width="88" height="32"
+                    alt="лого">
+                </picture>
               </a>
             </li>
             <li class="nav-list__item">
@@ -863,7 +889,7 @@
               <a class="nav-list__link" href="#">Акции</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link">Тренеры</a>
+              <a class="nav-list__link" id="footerTrainer" href="#">Тренеры</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="#">Расписание</a>

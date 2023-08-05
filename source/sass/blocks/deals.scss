@@ -25,7 +25,7 @@
 
   @media (max-width: $tablet-width) {
     font-size: 42px;
-    margin: 0 9px 54px 0;
+    margin: 0 0 54px 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -95,6 +95,7 @@
   font-weight: 700;
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  align-self: start;
   margin-top: auto;
   color: $color-default-white;
   text-decoration: underline;
@@ -102,12 +103,17 @@
   @media (max-width: $tablet-width) {
     line-height: normal;
   }
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+  }
 }
 
 .deals__image-wrapper img {
   width: 280px;
   height: 462px;
   object-fit: cover;
+  background-color: $light-slate-grey;
 
   @media (max-width: $tablet-width) {
     width: 399px;
@@ -184,4 +190,9 @@
   color: $resolution-blue;
   text-decoration: underline;
   text-transform: uppercase;
+  align-self: start;
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+  }
 }

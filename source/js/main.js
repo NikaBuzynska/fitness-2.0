@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const reviewsSwiper = new Swiper('#swiper-reviews', {
     direction: 'horizontal',
     autoHeight: true,
-    loop: true,
+    loop: false,
     slidesPerView: 1,
 
     // Navigation arrows
@@ -81,6 +81,31 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  let buyPassButton = document.getElementById('buyPassButton');
+  let passesBlock = document.getElementById('passesBlock');
+
+  if (buyPassButton && passesBlock) {
+    buyPassButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      passesBlock.scrollIntoView({behavior: 'smooth'});
+    });
+  }
+
+  let footerTrainer = document.getElementById('footerTrainer');
+  let trainersBlock = document.getElementById('trainersBlock');
+
+  if (footerTrainer && trainersBlock) {
+    footerTrainer.addEventListener('click', function (event) {
+      event.preventDefault();
+      trainersBlock.scrollIntoView({behavior: 'smooth'});
+    });
+  }
+
+  const phoneInput = document.getElementById('phoneInput');
+
+  phoneInput.addEventListener('input', function () {
+    this.value = this.value.replace(/[^0-9\s]/g, '');
+  });
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

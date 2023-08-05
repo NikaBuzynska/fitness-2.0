@@ -15,31 +15,36 @@
 
 .nav-list__item {
   font-size: 14px;
+  padding: 43px 20px 42px;
 
   &:last-child {
     margin-right: auto;
   }
 
+  @media (max-width: $tablet-width) {
+    padding: 45px 15px;
+  }
+
   @media (max-width: $mobile-width) {
+    padding: 8px 60px 7px 0;
     font-size: 16px;
-    padding-right: 60px;
   }
 }
 
 .nav-list__item--logo {
   margin-right: auto;
   padding-left: 0;
-  padding-top: 49px;
+  padding-top: 52px;
   padding-right: 60px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 44px;
+    padding-top: 47px;
     padding-right: 26px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 8px;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
   }
 }
 
@@ -64,13 +69,16 @@
 .nav-list__link {
   display: inline-block;
   color: $color-default-white;
-  padding: 43px 20px 42px;
+}
 
+.nav-list__logo-link img {
   @media (max-width: $tablet-width) {
-    padding: 45px 15px;
+    width: 82px;
+    height: 17px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 8px 0 7px;
+    width: 68px;
+    height: 15px;
   }
 }

@@ -52,7 +52,7 @@
   @media (max-width: $mobile-width) {
     width: 226px;
     height: 335px;
-    padding: 40px 25px 34px;
+    padding: 40px 23px 34px;
   }
 }
 
@@ -64,8 +64,8 @@
 .reviews__picture img {
   width: 80px;
   height: 80px;
-  margin-right: 28px;
-  margin-top: 7px;
+  margin-right: 0;
+  margin-top: 1px;
   border-radius: 50%;
 
   @media (max-width: $mobile-width) {
@@ -88,7 +88,7 @@
 
   @media (max-width: $mobile-width) {
     line-height: 26px;
-    margin: 9px 0 21px 100px;
+    margin: 9px 0 23px 90px;
   }
 }
 
@@ -111,6 +111,7 @@
   bottom: 220px;
   transform: translateY(-50%);
   font-size: 0; /* to hide the default text */
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     bottom: 201px;

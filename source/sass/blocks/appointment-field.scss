@@ -159,6 +159,10 @@
   color: #ff121f;
 }
 
+.appointment-field__form-label--error input {
+  border-color: #ff121f;
+}
+
 .appointment-field__form-label--error .appointment-field__form-error-message {
   display: block;
 }

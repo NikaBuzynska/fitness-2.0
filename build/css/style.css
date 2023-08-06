@@ -1506,11 +1506,13 @@ ul {
   list-style: none;
 }
 
-button {
-  user-select: none; /* Отключает выделение текста */
-  -webkit-user-select: none; /* Для Safari и Chrome */
-  -moz-user-select: none; /* Для Firefox */
-  -ms-user-select: none;
+button { /* Отключает выделение текста */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; /* Для Safari и Chrome */
+  user-select: none; /* Для Firefox */
+  user-select: none;
 }
 
 .btn {
@@ -2196,8 +2198,8 @@ button {
   border: none;
   border-radius: 50%;
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ED0233), to(#003EB7));
-  background-image: linear-gradient(to right, #ED0233, #003EB7);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+  background-image: linear-gradient(to right, #ed0233, #003eb7);
   cursor: pointer;
 }
 @media (max-width: 1199px) {
@@ -2717,7 +2719,7 @@ button {
   cursor: pointer;
 }
 .promo__button:hover, .promo__button:focus {
-  color: #103AAE;
+  color: #103aae;
   background-color: #ffffff;
 }
 .promo__button:active {
@@ -4213,7 +4215,11 @@ button {
   position: absolute;
   font-size: 14px;
   line-height: 22px;
-  color: #FF121F;
+  color: #ff121f;
+}
+
+.appointment-field__form-label--error input {
+  border-color: #ff121f;
 }
 
 .appointment-field__form-label--error .appointment-field__form-error-message {
@@ -4285,7 +4291,7 @@ button {
   top: 6px;
   left: 50%;
   margin-left: -49px;
-  background-color: #74819C;
+  background-color: #74819c;
   content: "";
 }
 @media (max-width: 1199px) {

@@ -14,8 +14,7 @@ ul {
   list-style: none;
 }
 
-button { /* Отключает выделение текста */
-  user-select: none; /* Для Safari и Chrome */
+button { /* Отключает выделение текста */ /* Для Safari и Chrome */
   user-select: none; /* Для Firefox */
   user-select: none;
 }

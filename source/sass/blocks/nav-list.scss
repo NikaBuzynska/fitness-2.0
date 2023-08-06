@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 45px 15px;
+    padding: 41px 5px;
   }
 
   @media (max-width: $mobile-width) {
@@ -76,6 +76,10 @@
 
   &:focus {
     border: 1px solid $color-default-white;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
   }
 }
 

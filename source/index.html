@@ -92,9 +92,19 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
             <div class="gym__play-button-wrapper">
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.2" cx="50" cy="50" r="49" stroke="url(#paint0_linear_82_466)" stroke-width="2" />
+                <defs>
+                  <linearGradient id="paint0_linear_82_466" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="1" stop-color="#ED0233" />
+                    <stop offset="1" stop-color="#003EB7" />
+                  </linearGradient>
+                </defs>
+              </svg>
               <button class="gym__play-button" type="button">
                 <svg class="gym__play-button-icon" width="100" height="100" viewBox="0 0 100 100">
-                  <use xlink:href="img/sprite.svg#play-button"></use>
+                  <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"/>
                 </svg>
               </button>
             </div>
@@ -501,7 +511,7 @@
               <li class="deals__list-item">
                 <div class="deals__item-text-wrapper">
                   <h3 class="deals__item-title">Месяц бесплатно</h3>
-                  <p class="deals__item-info">Приведи друга, получи абонемент в подарок</p>
+                  <p class="deals__item-info">Приведи друга, получи<br>абонемент в подарок</p>
                 </div>
                 <a class="deals__item-button" href="#">подробнее</a>
               </li>
@@ -835,13 +845,24 @@
               </div>
             </div>
           </div>
-          <div class="reviews__swiper-button-prev"></div>
-          <div class="reviews__swiper-button-next"></div>
+          <div class="reviews__swiper-button-prev">
+            <svg class="reviews__swiper-button-icon reviews__swiper-button-icon--left" width="18" height="34"
+              viewBox="0 0 18 34">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="reviews__swiper-button-next">
+            <svg class="reviews__swiper-button-icon reviews__swiper-button-icon--right" width="18" height="34"
+              viewBox="0 0 18 34">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
         </div>
       </section>
       <section class="additional-info">
         <div class="appointment-field">
-          <form class="appointment-field__form" id="appointmentForm" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="appointment-field__form" id="appointmentForm" action="https://echo.htmlacademy.ru/"
+            method="post">
             <h3 class="appointment-field__form-title">Бесплатное занятие</h3>
             <fieldset class="appointment-field__form-group">
               <div class="appointment-field__form-group-wrapper">

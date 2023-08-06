@@ -89,7 +89,7 @@
   font-size: 18px;
 
   @media (max-width: $mobile-width) {
-    margin: 12px 0 33px;
+    margin: 12px 0 22px;
   }
 }
 
@@ -178,6 +178,7 @@
 
   @media (max-width: $tablet-width) {
     width: 324px;
+    padding-bottom: 16px;
 
     &:last-child {
       margin-bottom: 40px;
@@ -187,7 +188,7 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     text-align: center;
-    padding: 38px 28px;
+    padding: 38px 28px 26px;
     margin: 0;
   }
 }
@@ -203,6 +204,14 @@
 
 .deals__item-info {
   margin-top: 0;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .deals__item-button {

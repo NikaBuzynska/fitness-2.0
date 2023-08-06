@@ -1506,12 +1506,11 @@ ul {
   list-style: none;
 }
 
-button { /* Отключает выделение текста */
+button { /* Отключает выделение текста */ /* Для Safari и Chrome */
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; /* Для Safari и Chrome */
-  user-select: none; /* Для Firefox */
+          user-select: none; /* Для Firefox */
   user-select: none;
 }
 
@@ -2188,11 +2187,25 @@ button { /* Отключает выделение текста */
           justify-content: center;
   width: 100px;
   height: 100px;
-  border: 2px solid #f6c8d4;
-  border-radius: 50%;
+}
+.gym__play-button-wrapper:hover circle, .gym__play-button-wrapper:focus circle, .gym__play-button-wrapper:active circle {
+  stroke: #102654;
+  opacity: 1;
+}
+@media (max-width: 1199px) {
+  .gym__play-button-wrapper {
+    width: 73px;
+    height: 73px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__play-button-wrapper {
+    right: 38%;
+  }
 }
 
 .gym__play-button {
+  position: absolute;
   width: 72px;
   height: 72px;
   border: none;
@@ -2204,25 +2217,30 @@ button { /* Отключает выделение текста */
 }
 @media (max-width: 1199px) {
   .gym__play-button {
-    top: 35%;
-    right: 41%;
-    width: 49px;
-    height: 49px;
-  }
-}
-@media (max-width: 767px) {
-  .gym__play-button {
-    top: 34%;
-    right: 42%;
+    top: 14%;
+    right: 18%;
     width: 50px;
     height: 50px;
   }
 }
 
+.gym__play-button-wrapper:hover .gym__play-button,
+.gym__play-button-wrapper:focus .gym__play-button {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.gym__play-button-wrapper:active .gym__play-button {
+  width: 54px;
+  height: 54px;
+  background-color: #ffffff;
+  background-image: none;
+}
+
 .gym__play-button-icon {
   position: absolute;
-  top: -2px;
-  left: -3px;
+  top: -19%;
+  left: -21%;
 }
 @media (max-width: 1199px) {
   .gym__play-button-icon {
@@ -2231,6 +2249,21 @@ button { /* Отключает выделение текста */
     width: 72px;
     height: 72px;
   }
+}
+
+.gym__play-button-icon path {
+  fill: #ffffff;
+}
+
+.gym__play-button-wrapper:hover .gym__play-button-icon path,
+.gym__play-button-wrapper:focus .gym__play-button-icon path,
+.gym__play-button-wrapper:active .gym__play-button-icon path {
+  fill: #102654;
+}
+
+.gym__play-button-wrapper:active .gym__play-button-icon {
+  top: -42%;
+  left: -44%;
 }
 
 .passes {
@@ -3361,7 +3394,7 @@ button { /* Отключает выделение текста */
 }
 @media (max-width: 767px) {
   .deals__description {
-    margin: 12px 0 33px;
+    margin: 12px 0 22px;
   }
 }
 
@@ -3471,6 +3504,7 @@ button { /* Отключает выделение текста */
 @media (max-width: 1199px) {
   .deals__list-item {
     width: 324px;
+    padding-bottom: 16px;
   }
   .deals__list-item:last-child {
     margin-bottom: 40px;
@@ -3480,7 +3514,7 @@ button { /* Отключает выделение текста */
   .deals__list-item {
     width: 100%;
     text-align: center;
-    padding: 38px 28px;
+    padding: 38px 28px 26px;
     margin: 0;
   }
 }
@@ -3496,6 +3530,16 @@ button { /* Отключает выделение текста */
 
 .deals__item-info {
   margin-top: 0;
+}
+@media (max-width: 1199px) {
+  .deals__item-info {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .deals__item-info {
+    margin-bottom: 11px;
+  }
 }
 
 .deals__item-button {
@@ -3863,7 +3907,7 @@ button { /* Отключает выделение текста */
   width: 80px;
   height: 80px;
   margin-right: 0;
-  margin-top: 1px;
+  margin-top: 7px;
   border-radius: 50%;
 }
 @media (max-width: 767px) {
@@ -3904,101 +3948,61 @@ button { /* Отключает выделение текста */
 
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: none;
+  width: 56px;
+  height: 56px;
   border: none;
   position: absolute;
-  bottom: 220px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 0; /* to hide the default text */
   cursor: pointer;
+  border-radius: 50%;
 }
-@media (max-width: 1199px) {
-  .reviews__swiper-button-prev,
-.reviews__swiper-button-next {
-    bottom: 201px;
-  }
+.reviews__swiper-button-prev:hover, .reviews__swiper-button-prev:focus,
+.reviews__swiper-button-next:hover,
+.reviews__swiper-button-next:focus {
+  border: 1px solid #102654;
 }
-@media (max-width: 767px) {
-  .reviews__swiper-button-prev,
-.reviews__swiper-button-next {
-    bottom: 223px;
-  }
-}
-
-.reviews__swiper-button-prev::after,
-.reviews__swiper-button-next::after {
-  content: "";
-  display: block;
-  width: 23px;
-  height: 23px;
-  border-top: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-}
-@media (max-width: 767px) {
-  .reviews__swiper-button-prev::after,
-.reviews__swiper-button-next::after {
-    width: 16px;
-    height: 16px;
-  }
+.reviews__swiper-button-prev:active,
+.reviews__swiper-button-next:active {
+  background-color: #102654;
 }
 
 .reviews__swiper-button-prev {
-  left: calc(50% - 332px);
-}
-@media (max-width: 1199px) {
-  .reviews__swiper-button-prev {
-    left: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .reviews__swiper-button-prev {
-    left: 16px;
-  }
+  left: 328px;
+  bottom: 213px;
 }
 
-.reviews__swiper-button-prev::before {
-  -webkit-transform: translateY(-6px);
-      -ms-transform: translateY(-6px);
-          transform: translateY(-6px);
-}
-
-.reviews__swiper-button-prev::after {
-  -webkit-transform: rotate(226deg);
-      -ms-transform: rotate(226deg);
-          transform: rotate(226deg);
-  margin-top: -6px;
+.reviews__swiper-button-icon--left {
+  margin-right: 4px;
 }
 
 .reviews__swiper-button-next {
-  right: calc(50% - 332px);
-}
-@media (max-width: 1199px) {
-  .reviews__swiper-button-next {
-    right: 50px;
-  }
-}
-@media (max-width: 767px) {
-  .reviews__swiper-button-next {
-    right: 16px;
-  }
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 328px;
+  bottom: 213px;
 }
 
-.reviews__swiper-button-next::before {
-  -webkit-transform: translateY(4px);
-      -ms-transform: translateY(4px);
-          transform: translateY(4px);
+.reviews__swiper-button-icon--right {
+  margin-right: 4px;
 }
 
-.reviews__swiper-button-next::after {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  margin-top: 2px;
+.reviews__swiper-button-icon--left,
+.reviews__swiper-button-icon--right {
+  stroke: #102654;
+}
+.reviews__swiper-button-icon--left:active,
+.reviews__swiper-button-icon--right:active {
+  stroke: #ffffff;
 }
 
 .additional-info {
@@ -4429,7 +4433,7 @@ button { /* Отключает выделение текста */
 }
 @media (max-width: 1199px) {
   .nav-list__item {
-    padding: 45px 15px;
+    padding: 41px 5px;
   }
 }
 @media (max-width: 767px) {
@@ -4488,6 +4492,11 @@ button { /* Отключает выделение текста */
 }
 .nav-list__link:focus {
   border: 1px solid #ffffff;
+}
+@media (max-width: 767px) {
+  .nav-list__link {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1199px) {

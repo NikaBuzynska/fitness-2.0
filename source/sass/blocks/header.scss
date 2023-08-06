@@ -219,6 +219,11 @@
   background-color: $color-default-white;
 }
 
+.header__button:active {
+  color: $Sapphire;
+  background-color: $color-default-white;
+}
+
 .header__button:disabled {
   opacity: 0.5;
 }

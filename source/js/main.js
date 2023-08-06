@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   window.reviewsSwiper = reviewsSwiper;
 
-  let playButton = document.querySelector('.gym__play-button');
+  let playButton = document.querySelector('.gym__play-button-wrapper');
   let video = document.querySelector('.gym__video');
   let image = document.querySelector('.gym__video-image');
 
@@ -101,10 +101,31 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const phoneInput = document.getElementById('phoneInput');
+  const form = document.getElementById('appointmentForm');
+  const nameInput = document.getElementById('nameInput');
+  const nameLabel = nameInput.parentElement;
 
-  phoneInput.addEventListener('input', function () {
-    this.value = this.value.replace(/[^0-9\s]/g, '');
+  const phoneInput = document.getElementById('phoneInput');
+  phoneInput.addEventListener('input', function (event) {
+    const input = event.target;
+    input.value = input.value.replace(/[^0-9\s]/g, '');
+  });
+  const phoneLabel = phoneInput.parentElement;
+
+  form.addEventListener('submit', function (event) {
+    if (nameInput.value === '') {
+      event.preventDefault();
+      nameLabel.classList.add('appointment-field__form-label--error');
+    } else {
+      nameLabel.classList.remove('appointment-field__form-label--error');
+    }
+
+    if (phoneInput.value === '') {
+      event.preventDefault();
+      phoneLabel.classList.add('appointment-field__form-label--error');
+    } else {
+      phoneLabel.classList.remove('appointment-field__form-label--error');
+    }
   });
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -118,12 +139,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // init accordion
     initAccordions();
-
-    // init form
-    const form = new Form();
-    window.form = form;
-    form.init();
-
   });
 });
 

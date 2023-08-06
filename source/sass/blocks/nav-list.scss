@@ -15,7 +15,7 @@
 
 .nav-list__item {
   font-size: 14px;
-  padding: 43px 20px 42px;
+  padding: 38px 10px 37px;
 
   &:last-child {
     margin-right: auto;
@@ -69,6 +69,15 @@
 .nav-list__link {
   display: inline-block;
   color: $color-default-white;
+  padding: 5px 10px;
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:focus {
+    border: 1px solid $color-default-white;
+  }
 }
 
 .nav-list__logo-link img {

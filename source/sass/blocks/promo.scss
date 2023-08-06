@@ -145,6 +145,17 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: #103AAE;
+    background-color: $color-default-white;
+  }
+
+  &:active {
+    color: $Sapphire;
+    background-color: $color-default-white;
+  }
+
   @media (max-width: $tablet-width) {
     font-size: 10px;
     letter-spacing: 0.5px;

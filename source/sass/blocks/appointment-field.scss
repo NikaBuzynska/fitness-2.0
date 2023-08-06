@@ -64,6 +64,9 @@
 }
 
 .appointment-field__form-label {
+  position: relative;
+  display: inline-block;
+
   &:first-child {
     margin-right: 30px;
   }
@@ -92,6 +95,15 @@
   background-color: $Sapphire;
   border: none;
   border-bottom: 1px solid $light-slate-grey;
+
+  &:hover {
+    border-color: $color-default-white;
+  }
+
+  &:focus,
+  &active {
+    border: 1px solid $color-default-white;
+  }
 
   @media (max-width: $tablet-width) {
     width: 204px;
@@ -126,9 +138,27 @@
   border: 3px solid $color-default-white;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: $Sapphire;
+    background-color: $color-default-white;
+  }
+
   @media (max-width: $mobile-width) {
     padding-left: 0;
     padding-right: 0;
     width: 290px;
   }
+}
+
+.appointment-field__form-error-message {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FF121F;
+}
+
+.appointment-field__form-label--error .appointment-field__form-error-message {
+  display: block;
 }

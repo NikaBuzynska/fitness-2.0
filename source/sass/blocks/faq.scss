@@ -185,6 +185,16 @@
     content: "";
   }
 
+  &:hover,
+  &:focus {
+    background-color: $Sapphire;
+
+    &::before,
+    &::after {
+      background-color: $color-default-white;
+    }
+  }
+
   @media (max-width: $mobile-width) {
     top: 35%;
     right: 0;

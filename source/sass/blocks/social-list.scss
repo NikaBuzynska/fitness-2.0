@@ -21,6 +21,24 @@
   }
 }
 
-// .social-list__link {
-//     color: $color-default-white;
-// }
+.social-list__icon path:nth-child(2) {
+  fill: #030a1a;
+}
+
+.social-list__icon {
+  fill: $color-default-white;
+
+  &:hover,
+  &:focus {
+    fill: #103aae;
+
+    & path:nth-child(2) {
+      fill: $color-default-white;
+    }
+  }
+
+  &:active {
+    fill: $Sapphire;
+  }
+}
+

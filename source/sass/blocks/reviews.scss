@@ -106,14 +106,18 @@
 
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   background: none;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // z-index: 10;
   width: 56px;
   height: 56px;
+  bottom: 213px;
   border: none;
-  position: absolute;
   cursor: pointer;
   border-radius: 50%;
 
@@ -125,11 +129,25 @@
   &:active {
     background-color: $Sapphire;
   }
+
+  @media (max-width: $tablet-width) {
+    bottom: calc(50% - 68px);
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 15px;
+    height: 19px;
+    bottom: calc(50% - 46px);
+  }
 }
 
 .reviews__swiper-button-prev {
-  left: 328px;
-  bottom: 213px;
+  // left: 328px;
+  left: calc((100% - 562px) / 2 - 74px);  // (1358 - 562)/2 - 96
+
+  @media (max-width: $mobile-width) {
+    left: calc((100% - 226px) / 2 - 33px);
+  }
 }
 
 .reviews__swiper-button-icon--left {
@@ -138,8 +156,13 @@
 
 .reviews__swiper-button-next {
   transform: rotate(180deg);
-  right: 328px;
-  bottom: 213px;
+  right: calc((100% - 562px) / 2 - 74px);
+  // right: 328px;
+
+  @media (max-width: $mobile-width) {
+    right: calc((100% - 226px) / 2 - 33px);
+    // bottom: calc(50% - 46px);
+  }
 }
 
 .reviews__swiper-button-icon--right {

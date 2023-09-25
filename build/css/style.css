@@ -3948,6 +3948,7 @@ button { /* Отключает выделение текста */ /* Для Safa
 
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3960,8 +3961,8 @@ button { /* Отключает выделение текста */ /* Для Safa
   background: none;
   width: 56px;
   height: 56px;
+  bottom: 213px;
   border: none;
-  position: absolute;
   cursor: pointer;
   border-radius: 50%;
 }
@@ -3974,10 +3975,28 @@ button { /* Отключает выделение текста */ /* Для Safa
 .reviews__swiper-button-next:active {
   background-color: #102654;
 }
+@media (max-width: 1199px) {
+  .reviews__swiper-button-prev,
+.reviews__swiper-button-next {
+    bottom: calc(50% - 68px);
+  }
+}
+@media (max-width: 767px) {
+  .reviews__swiper-button-prev,
+.reviews__swiper-button-next {
+    width: 15px;
+    height: 19px;
+    bottom: calc(50% - 46px);
+  }
+}
 
 .reviews__swiper-button-prev {
-  left: 328px;
-  bottom: 213px;
+  left: calc((100% - 562px) / 2 - 74px);
+}
+@media (max-width: 767px) {
+  .reviews__swiper-button-prev {
+    left: calc((100% - 226px) / 2 - 33px);
+  }
 }
 
 .reviews__swiper-button-icon--left {
@@ -3988,8 +4007,12 @@ button { /* Отключает выделение текста */ /* Для Safa
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  right: 328px;
-  bottom: 213px;
+  right: calc((100% - 562px) / 2 - 74px);
+}
+@media (max-width: 767px) {
+  .reviews__swiper-button-next {
+    right: calc((100% - 226px) / 2 - 33px);
+  }
 }
 
 .reviews__swiper-button-icon--right {
